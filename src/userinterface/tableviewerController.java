@@ -1,14 +1,14 @@
 package userinterface;
 
-import dataprocessing.Fileread;
-import javafx.fxml.FXML;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TextArea;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import dataprocessing.Fileread;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TextArea;
 
 public class tableviewerController {
 

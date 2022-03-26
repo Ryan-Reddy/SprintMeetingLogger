@@ -3,6 +3,8 @@ package dataprocessing;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class Filewriter {
     public static void filewriter(String newline, String path) throws IOException {

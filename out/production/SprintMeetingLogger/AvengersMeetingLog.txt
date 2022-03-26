@@ -1,0 +1,5 @@
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 13:00:21; endtime= 14:56:00; ryan= true; bayan= true; oussama= true; mees=true; mohamed= false,;note=  '
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 14:56:00; endtime= 23:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:06:00; endtime= 22:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:00:00; endtime= 18:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-24; starttime= 14:00:00; endtime= 18:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'een uurtje gewerkt aan de sprintbacklog, kort gestaakt, mohamed en Thijs niet aanwezig. ']
