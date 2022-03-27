@@ -34,9 +34,21 @@ public class Meeting {
     }
 
     @Override
+    public boolean equals(Object o) {
+        boolean GelijkeObjecten = false;
+        if (!(o instanceof Meeting) || o == null) {
+            return false;
+        }
+        Meeting m = (Meeting) o;
+        System.out.println(date == m.date);
+        System.out.println(subject.equals(m.subject));
+        return date == m.date && subject.equals(m.subject);
+    }
+
+
+    @Override
     public String toString() {
         if (endTime.equals("<now>")) {
-            System.out.println(endTime.getBytes(StandardCharsets.UTF_8));
             String s =
                     "[Meeting subject= '" + subject +
                     "', date= " + date +

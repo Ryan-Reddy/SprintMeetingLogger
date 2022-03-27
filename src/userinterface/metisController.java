@@ -4,6 +4,7 @@ package userinterface;
  * Sample Skeleton for 'metis.fxml' Controller Class
  */
 
+import com.sun.tools.javac.Main;
 import dataprocessing.Filewriter;
 import dataprocessing.Meeting;
 import javafx.collections.FXCollections;
@@ -161,7 +162,7 @@ public class metisController {
         dbStage.setTitle("Overview");
         dbStage.centerOnScreen();
         dbStage.initModality(Modality.APPLICATION_MODAL);
-                dbStage.setScene(new Scene(loadup));
+        dbStage.setScene(new Scene(loadup));
 
         dbStage.showAndWait();
 

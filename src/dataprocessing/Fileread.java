@@ -12,14 +12,5 @@ public class Fileread {
         List<String> meetings = Files.readAllLines(path);
         String alleTekst = Files.readString(path);
         return meetings;
-
-//        for (String meets:meetings) {
-////            textArea.appendText(meets+"\n");
-//        }
-
-
-//        textArea.setText(Files.readString(path));
-
-
     }
 }
