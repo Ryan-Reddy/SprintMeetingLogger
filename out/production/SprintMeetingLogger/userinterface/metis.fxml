@@ -28,6 +28,7 @@
                         <CheckBox fx:id="oussamaCheckBox" mnemonicParsing="false" text="Oussama" />
                         <CheckBox fx:id="mohamedCheckBox" mnemonicParsing="false" text="Mohamed" />
                         <CheckBox fx:id="meesCheckBox" mnemonicParsing="false" text="Mees" />
+                        <CheckBox fx:id="thijsCheckBox" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" text="Thijs" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

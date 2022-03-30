@@ -13,6 +13,7 @@ public class Meeting {
     private final boolean oussama;
     private final boolean mees;
     private final boolean mohamed;
+    private final boolean thijs;
     private final String subject;
     private final LocalDate date;
     private final String time;
@@ -20,12 +21,13 @@ public class Meeting {
     private final String note;
 
 
-    public Meeting(boolean ryan, boolean bayan, boolean oussama, boolean mees, boolean mohamed, String subject, LocalDate date, String time, String endTime, String note) {
+    public Meeting(boolean ryan, boolean bayan, boolean oussama, boolean mees, boolean mohamed, boolean thijs, String subject, LocalDate date, String time, String endTime, String note) {
         this.ryan = ryan;
         this.bayan = bayan;
         this.oussama = oussama;
         this.mees = mees;
         this.mohamed = mohamed;
+        this.thijs = thijs;
         this.subject = subject;
         this.date = date;
         this.endTime = endTime;
@@ -59,6 +61,7 @@ public class Meeting {
                     ", oussama= " + oussama +
                     ", mees=" + mees +
                     ", mohamed= " + mohamed +
+                    ", thijs= " + thijs +
                     ", note= '" + note + "']";
             return s;
         } else {
@@ -72,6 +75,7 @@ public class Meeting {
                     ", oussama= " + oussama +
                     ", mees=" + mees +
                     ", mohamed= " + mohamed +
+                    ", thijs= " + thijs +
                     ", note= '" + note + "']";
             return s;
         }

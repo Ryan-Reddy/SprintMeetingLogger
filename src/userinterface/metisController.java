@@ -95,6 +95,9 @@ public class metisController {
     @FXML // fx:id="ryanCheckBox"
     private CheckBox ryanCheckBox; // Value injected by FXMLLoader
 
+    @FXML // fx:id="thijsCheckBox"
+    private CheckBox thijsCheckBox; // Value injected by FXMLLoader
+
     @FXML // fx:id="saveAsTextField"
     private TextField saveAsTextField; // Value injected by FXMLLoader
 
@@ -116,6 +119,7 @@ public class metisController {
         assert baianCheckBox != null : "fx:id=\"baianCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert meesCheckBox != null : "fx:id=\"meesCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert mohamedCheckBox != null : "fx:id=\"mohamedCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
+        assert mohamedCheckBox != null : "fx:id=\"thijsCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert onderwerpTextField != null : "fx:id=\"onderwerpTextField\" was not injected: check your FXML file 'metis.fxml'.";
         assert oussamaCheckBox != null : "fx:id=\"oussamaCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert ryanCheckBox != null : "fx:id=\"ryanCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
@@ -139,6 +143,7 @@ public class metisController {
                 oussamaCheckBox.isSelected(),
                 meesCheckBox.isSelected(),
                 mohamedCheckBox.isSelected(),
+                thijsCheckBox.isSelected(),
                 "sprint 1 scrum",
                 DatePicker.getValue(),
                 timeTextField.getText(),
