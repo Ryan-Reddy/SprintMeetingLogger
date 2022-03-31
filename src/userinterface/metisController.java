@@ -4,7 +4,6 @@ package userinterface;
  * Sample Skeleton for 'metis.fxml' Controller Class
  */
 
-import com.sun.tools.javac.Main;
 import dataprocessing.Filewriter;
 import dataprocessing.Meeting;
 import javafx.collections.FXCollections;
@@ -17,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -30,20 +30,14 @@ import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class metisController {
-    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-    String nowTime = dtf.format(LocalTime.now());
-
-
     private final ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup", "Sprint Review", "Projecturen"));
     private final ObservableList<String> observableMeetingTypeList = FXCollections.observableList(meetingTypeList);
-
     private final ArrayList<String> sprintNumList = new ArrayList(Arrays.asList("Sprint 0", "Sprint 1", "Sprint 2", "Sprint 3"));
     private final ObservableList<String> observableSprintNumList = FXCollections.observableList(sprintNumList);
-
     private final ArrayList<String> teamList = new ArrayList(Arrays.asList("The Avengers"));
     private final ObservableList<String> observableTeamList = FXCollections.observableList(teamList);
-
-
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
+    String nowTime = dtf.format(LocalTime.now());
     @FXML // ResourceBundle that was given to the FXMLLoader
     private ResourceBundle resources;
 
@@ -110,10 +104,14 @@ public class metisController {
     @FXML // fx:id="timeTextField"
     private TextField timeTextField; // Value injected by FXMLLoader
 
+    @FXML
+    private Label statusLabel;
 
     @FXML
         // This method is called by the FXMLLoader when initialization is complete
-        void initialize() {
+    void initialize() {
+        System.out.println("~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~");
+        System.out.println("_INIT_");
         assert DatePicker != null : "fx:id=\"DatePicker\" was not injected: check your FXML file 'metis.fxml'.";
         assert TeamComboBox != null : "fx:id=\"TeamComboBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert baianCheckBox != null : "fx:id=\"baianCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
@@ -125,7 +123,9 @@ public class metisController {
         assert ryanCheckBox != null : "fx:id=\"ryanCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert timeTextField != null : "fx:id=\"timeTextField\" was not injected: check your FXML file 'metis.fxml'.";
         assert textArea != null : "yooyoyoo";
+        statusLabel.setTextFill(Color.BLACK);
 
+        statusLabel.setText("Status Ok!");
         DatePicker.setValue(LocalDate.now());
         timeTextField.setText(nowTime);
         ryanCheckBox.setSelected(true);
@@ -136,24 +136,43 @@ public class metisController {
         imageView.setImage(new Image("metis.jpg"));
     }
 
-    public void opslaanButtonPressed(ActionEvent actionEvent) throws IOException {
-        Filewriter.filewriter(new Meeting(
-                ryanCheckBox.isSelected(),
-                baianCheckBox.isSelected(),
-                oussamaCheckBox.isSelected(),
-                meesCheckBox.isSelected(),
-                mohamedCheckBox.isSelected(),
-                thijsCheckBox.isSelected(),
-                "sprint 1 scrum",
-                DatePicker.getValue(),
-                timeTextField.getText(),
-                endTimeTextField.getText(),
-                textArea.getText()).toString(), saveAsTextField.getText());
+    public void opslaanButtonPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
+        try {
+            Filewriter.filewriter(new Meeting(
+                    ryanCheckBox.isSelected(),
+                    baianCheckBox.isSelected(),
+                    oussamaCheckBox.isSelected(),
+                    meesCheckBox.isSelected(),
+                    mohamedCheckBox.isSelected(),
+                    thijsCheckBox.isSelected(),
+                    "sprint 1 scrum",
+                    DatePicker.getValue(),
+                    timeTextField.getText(),
+                    endTimeTextField.getText(),
+                    textArea.getText()).toString(), saveAsTextField.getText());
+
+            statusLabel.setTextFill(Color.CYAN);
+            statusLabel.setText("Save Completed!");
+            try {
+                wait(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                initialize();
+
+            }
+
+            initialize();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
-    public void clearButtonPressed(ActionEvent actionEvent) {
-        System.out.println("TODO clearbutton programming needed");
 
+    public void clearButtonPressed(ActionEvent actionEvent) throws InterruptedException {
+        statusLabel.setTextFill(Color.CYAN);
+        statusLabel.setText("Clearing.");
+        wait(1500);
+        initialize();
     }
 
     public void dbButtonPressed(ActionEvent actionEvent) throws IOException {
@@ -175,6 +194,7 @@ public class metisController {
 
     public void afsluitButtonPressed(ActionEvent actionEvent) {
         System.out.println("TODO Afsluitbutton programming needed");
+
     }
 //
 //    public void popup() throws IOException {
