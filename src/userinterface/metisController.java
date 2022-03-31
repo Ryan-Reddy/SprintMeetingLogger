@@ -34,7 +34,7 @@ public class metisController {
     String nowTime = dtf.format(LocalTime.now());
 
 
-    private final ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup", "Sprint Review"));
+    private final ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup", "Sprint Review", "Projecturen"));
     private final ObservableList<String> observableMeetingTypeList = FXCollections.observableList(meetingTypeList);
 
     private final ArrayList<String> sprintNumList = new ArrayList(Arrays.asList("Sprint 0", "Sprint 1", "Sprint 2", "Sprint 3"));
