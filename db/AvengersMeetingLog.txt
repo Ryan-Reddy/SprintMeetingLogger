@@ -9,3 +9,4 @@ Daily standups
 Ryan - gisteren gewerkt aan directory, vandaag ga ik werken aan maken van basic fxmls, en de todo lijst.
 Oussama - gisteren niks gedaan sinds; vandaag werken aan klassendiagram en sequence diagram af. Even kijken of thijs en mees nog te vinden zijn.
 Baian - gisteren niks gedaan; vandaag werken aan GUIs beheerder, student docent. fxmls. ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 11:05:19, endtime= 12:32:26, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'meeting FrontEnd, besproken plannen voor vandaag, apart fxmls maken. mohamed afwezig']
