@@ -24,12 +24,12 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class metisController {
-    private final ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup Sprint 1", "Daily Standup Sprint 2", "Daily Standup Sprint 3", "Sprint Review", "Projecturen"));
-    private final ObservableList<String> observableMeetingTypeList = FXCollections.observableList(meetingTypeList);
-    private final ArrayList<String> sprintNumList = new ArrayList(Arrays.asList("Sprint 0", "Sprint 1", "Sprint 2", "Sprint 3"));
-    private final ObservableList<String> observableSprintNumList = FXCollections.observableList(sprintNumList);
-    private final ArrayList<String> teamList = new ArrayList(Arrays.asList("The Avengers"));
-    private final ObservableList<String> observableTeamList = FXCollections.observableList(teamList);
+    private ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup Sprint 1", "Daily Standup Sprint 2", "Daily Standup Sprint 3", "Sprint Review", "Projecturen"));
+    private ObservableList<String> observableMeetingTypeList = FXCollections.observableList(meetingTypeList);
+    private ArrayList<String> sprintNumList = new ArrayList(Arrays.asList("Sprint 0", "Sprint 1", "Sprint 2", "Sprint 3"));
+    private ObservableList<String> observableSprintNumList = FXCollections.observableList(sprintNumList);
+    private ArrayList<String> teamList = new ArrayList(Arrays.asList("The Avengers"));
+    private ObservableList<String> observableTeamList = FXCollections.observableList(teamList);
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
     String nowTime = dtf.format(LocalTime.now());
     @FXML // ResourceBundle that was given to the FXMLLoader
