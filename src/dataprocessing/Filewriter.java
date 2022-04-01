@@ -13,7 +13,6 @@ public class Filewriter {
 
         System.out.println("=====================");
         BufferedWriter bw = new BufferedWriter(new FileWriter(path, true));
-        BufferedWriter bw2 = new BufferedWriter(new FileWriter("db/AvengersMeetingLog_backup.txt", true));
         BufferedWriter bw3 = new BufferedWriter(new FileWriter("C:\\Users\\RyRy\\IdeaProjects\\v1a-groep-4-the-avengers\\files\\AvengersMeetingLog_backup.txt", true));
 
 //        BufferedWriter bw3 = new BufferedWriter(new FileWriter(Path.of("C:\\Users\\RyRy\\IdeaProjects\\v1a-groep-4-the-avengers\\files\\AvengersMeetingLog_backup.txt"), true));
