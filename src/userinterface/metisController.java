@@ -16,7 +16,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.Border;
+import javafx.scene.layout.BorderStroke;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -151,7 +156,8 @@ public class metisController {
                     endTimeTextField.getText(),
                     textArea.getText()).toString(), saveAsTextField.getText());
 
-            statusLabel.setTextFill(Color.CYAN);
+            statusLabel.setTextFill(Color.GREEN);
+            statusLabel.setFont(new Font("Arial",15));
             statusLabel.setText("Save Completed!");
             try {
                 wait(3000);
