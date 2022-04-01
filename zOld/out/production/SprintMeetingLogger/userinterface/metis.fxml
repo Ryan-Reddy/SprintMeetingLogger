@@ -6,6 +6,11 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -14,107 +19,149 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="566.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
    <children>
-      <HBox alignment="CENTER" layoutX="76.0" layoutY="12.0" prefHeight="389.0" prefWidth="843.0" spacing="20.0">
-         <children>
-            <HBox prefHeight="370.0" prefWidth="200.0">
-               <children>
-                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="368.0" prefWidth="200.0">
+      <TabPane prefHeight="566.0" prefWidth="1026.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="MeetingLogger">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="1028.0">
                      <children>
-                        <VBox prefHeight="86.0" prefWidth="100.0" spacing="3.0">
+                        <AnchorPane layoutX="-410.0" layoutY="-123.0">
                            <children>
-                              <Label text="Aanwezig:" />
-                              <CheckBox fx:id="ryanCheckBox" mnemonicParsing="false" text="Ryan" />
-                              <CheckBox fx:id="baianCheckBox" mnemonicParsing="false" text="Baian" />
-                              <CheckBox fx:id="oussamaCheckBox" mnemonicParsing="false" text="Oussama" />
-                              <CheckBox fx:id="mohamedCheckBox" mnemonicParsing="false" text="Mohamed" />
-                              <CheckBox fx:id="meesCheckBox" mnemonicParsing="false" text="Mees" />
-                              <CheckBox fx:id="thijsCheckBox" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" text="Thijs" />
+                              <VBox layoutY="164.0" prefHeight="210.0" prefWidth="76.0" spacing="12.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="72.0" text="Datum:" />
+                                    <Label prefHeight="17.0" prefWidth="72.0" text="Begintijd:" />
+                                    <Label layoutX="10.0" layoutY="39.0" prefHeight="17.0" prefWidth="72.0" text="Eindtijd:" />
+                                    <Label layoutX="10.0" layoutY="68.0" prefHeight="17.0" prefWidth="72.0" text="Onderwerp:" />
+                                    <Label layoutX="10.0" layoutY="97.0" prefHeight="17.0" prefWidth="72.0" text="Team:" />
+                                    <Label layoutX="10.0" layoutY="126.0" prefHeight="17.0" prefWidth="72.0" text="Sprint:" />
+                                    <Label layoutX="10.0" layoutY="155.0" prefHeight="17.0" prefWidth="72.0" text="Type:" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="2.0" layoutY="367.0" prefHeight="49.0" prefWidth="276.0" spacing="10.0">
+                                 <children>
+                                    <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" text="Status: OK" />
+                                    <HBox prefHeight="17.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Button fx:id="afsluitButton" mnemonicParsing="false" onAction="#afsluitButtonPressed" text="Afsluiten" />
+                                          <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
+                                          <Button fx:id="opslaanButton" mnemonicParsing="false" onAction="#opslaanButtonPressed" text="Opslaan" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
                            </children>
-                           <VBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </VBox.margin>
-                        </VBox>
-                        <VBox prefHeight="155.0" prefWidth="173.0" spacing="5.0">
+                        </AnchorPane>
+                        <HBox layoutX="50.0" layoutY="74.0" prefHeight="370.0" prefWidth="200.0">
                            <children>
-                              <DatePicker fx:id="DatePicker" />
-                              <TextField fx:id="timeTextField" prefHeight="25.0" prefWidth="165.0" promptText="13:31" />
-                              <TextField fx:id="endTimeTextField" promptText="13:46" text="&lt;now&gt;" />
-                              <TextField fx:id="onderwerpTextField" promptText="Onderwerp" />
-                              <ComboBox fx:id="TeamComboBox" prefWidth="150.0" promptText="Avengers" />
-                              <ComboBox fx:id="sprintComboBox" layoutX="15.0" layoutY="135.0" prefWidth="150.0" promptText="Sprint 1" />
-                              <ComboBox fx:id="meetingTypeComboBox" layoutX="15.0" layoutY="165.0" prefWidth="150.0" promptText="Daily Standup" />
+                              <VBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="368.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="86.0" prefWidth="100.0" spacing="3.0">
+                                       <children>
+                                          <Label text="Aanwezig:" />
+                                          <CheckBox fx:id="ryanCheckBox" mnemonicParsing="false" text="Ryan" />
+                                          <CheckBox fx:id="baianCheckBox" mnemonicParsing="false" text="Baian" />
+                                          <CheckBox fx:id="oussamaCheckBox" mnemonicParsing="false" text="Oussama" />
+                                          <CheckBox fx:id="mohamedCheckBox" mnemonicParsing="false" text="Mohamed" />
+                                          <CheckBox fx:id="meesCheckBox" mnemonicParsing="false" text="Mees" />
+                                          <CheckBox fx:id="thijsCheckBox" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" text="Thijs" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="155.0" prefWidth="173.0" spacing="5.0">
+                                       <children>
+                                          <DatePicker fx:id="DatePicker" />
+                                          <TextField fx:id="timeTextField" prefHeight="25.0" prefWidth="165.0" promptText="13:31" />
+                                          <TextField fx:id="endTimeTextField" promptText="13:46" text="&lt;now&gt;" />
+                                          <TextField fx:id="onderwerpTextField" promptText="Onderwerp" />
+                                          <ComboBox fx:id="TeamComboBox" prefWidth="150.0" promptText="Avengers" />
+                                          <ComboBox fx:id="sprintComboBox" layoutX="15.0" layoutY="135.0" prefWidth="150.0" promptText="Sprint 1" />
+                                          <ComboBox fx:id="meetingTypeComboBox" layoutX="15.0" layoutY="165.0" prefWidth="150.0" promptText="Daily Standup" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
                            </children>
-                           <padding>
-                              <Insets left="5.0" right="5.0" top="5.0" />
-                           </padding>
+                        </HBox>
+                        <VBox alignment="CENTER" layoutX="262.0" layoutY="45.0" prefHeight="418.0" prefWidth="732.0">
+                           <children>
+                              <Label text="Notes:" />
+                              <TextArea fx:id="textArea" prefHeight="129.0" prefWidth="623.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.">
+                                 <opaqueInsets>
+                                    <Insets top="30.0" />
+                                 </opaqueInsets>
+                              </TextArea>
+                              <ImageView fx:id="imageView" fitHeight="107.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../MeetingTracker/pictures/metis.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <TextField fx:id="saveAsTextField" alignment="BOTTOM_CENTER" prefHeight="25.0" prefWidth="279.0" text="db/AvengersMeetingLog.txt">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
                         </VBox>
                      </children>
-                     <padding>
-                        <Insets left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </VBox>
-               </children>
-            </HBox>
-            <VBox alignment="CENTER" prefHeight="389.0" prefWidth="662.0">
-               <children>
-                  <Label text="Notes:" />
-                  <TextArea fx:id="textArea" prefHeight="129.0" prefWidth="623.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.">
-                     <opaqueInsets>
-                        <Insets top="30.0" />
-                     </opaqueInsets>
-                  </TextArea>
-                  <ImageView fx:id="imageView" fitHeight="107.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../MeetingTracker/pictures/metis.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                  </ImageView>
-                  <Button fx:id="dbButton" mnemonicParsing="false" onAction="#dbButtonPressed" text="See MeetingsOverview">
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                  </Button>
-                  <TextField fx:id="saveAsTextField" alignment="BOTTOM_CENTER" prefHeight="25.0" prefWidth="279.0" text="db/AvengersMeetingLog.txt">
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </TextField>
-               </children>
-            </VBox>
-         </children>
-         <padding>
-            <Insets left="20.0" right="20.0" />
-         </padding>
-         <opaqueInsets>
-            <Insets top="30.0" />
-         </opaqueInsets>
-      </HBox>
-      <VBox layoutX="19.0" layoutY="176.0" prefHeight="210.0" prefWidth="76.0" spacing="12.0">
-         <children>
-            <Label prefHeight="17.0" prefWidth="72.0" text="Datum:" />
-            <Label prefHeight="17.0" prefWidth="72.0" text="Begintijd:" />
-            <Label layoutX="10.0" layoutY="39.0" prefHeight="17.0" prefWidth="72.0" text="Eindtijd:" />
-            <Label layoutX="10.0" layoutY="68.0" prefHeight="17.0" prefWidth="72.0" text="Onderwerp:" />
-            <Label layoutX="10.0" layoutY="97.0" prefHeight="17.0" prefWidth="72.0" text="Team:" />
-            <Label layoutX="10.0" layoutY="126.0" prefHeight="17.0" prefWidth="72.0" text="Sprint:" />
-            <Label layoutX="10.0" layoutY="155.0" prefHeight="17.0" prefWidth="72.0" text="Type:" />
-         </children>
-      </VBox>
-      <VBox layoutX="21.0" layoutY="379.0" prefHeight="49.0" prefWidth="276.0" spacing="10.0">
-         <children>
-            <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" text="Status: OK" />
-            <HBox prefHeight="17.0" prefWidth="200.0" spacing="20.0">
-               <children>
-                  <Button fx:id="afsluitButton" mnemonicParsing="false" onAction="#afsluitButtonPressed" text="Afsluiten" />
-                  <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
-                  <Button fx:id="opslaanButton" mnemonicParsing="false" onAction="#opslaanButtonPressed" text="Opslaan" />
-               </children>
-            </HBox>
-         </children>
-      </VBox>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="OverviewMeetings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="473.0" prefWidth="1026.0" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: gray;">
+                                 <children>
+                                    <TableView prefHeight="265.0" prefWidth="1024.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn fx:id="c1" prefWidth="226.0" text="C1" />
+                                          <TableColumn fx:id="c2" prefWidth="73.0" text="C2" />
+                                          <TableColumn fx:id="c3" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c4" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c5" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c6" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c7" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c8" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c9" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c10" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c11" prefWidth="75.0" text="Column X" />
+                                          <TableColumn fx:id="c12" prefWidth="75.0" text="Column X" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: gray;">
+                                 <children>
+                                    <TextArea fx:id="textArea1" prefHeight="371.0" prefWidth="1024.0" style="-fx-background-color: gray; -fx-background-insets: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <Button fx:id="dbButton" layoutX="333.0" layoutY="487.0" mnemonicParsing="false" onAction="#dbButtonPressed" text="Update DB" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>

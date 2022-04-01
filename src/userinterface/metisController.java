@@ -1,25 +1,17 @@
 package userinterface;
 
+import dataprocessing.Fileread;
 import dataprocessing.Filewriter;
 import dataprocessing.Meeting;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.Border;
-import javafx.scene.layout.BorderStroke;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -28,6 +20,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class metisController {
@@ -109,6 +102,9 @@ public class metisController {
     private Label statusLabel;
 
     @FXML
+    private TextArea textArea1;
+
+    @FXML
         // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
         System.out.println("~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~");
@@ -124,8 +120,15 @@ public class metisController {
         assert ryanCheckBox != null : "fx:id=\"ryanCheckBox\" was not injected: check your FXML file 'metis.fxml'.";
         assert timeTextField != null : "fx:id=\"timeTextField\" was not injected: check your FXML file 'metis.fxml'.";
         assert textArea != null : "yooyoyoo";
-        statusLabel.setTextFill(Color.BLACK);
 
+        assert textArea != null : "fx:id=\"textArea\" was not injected: check your FXML file 'tableviewer.fxml'.";
+        try {
+            dbREFRESH();
+        } catch (IOException e) {
+            System.out.println("The database cannot be loaded:\n"+e);
+        }
+
+        statusLabel.setTextFill(Color.BLACK);
         statusLabel.setText("Status Ok!");
         DatePicker.setValue(LocalDate.now());
         timeTextField.setText(nowTime);
@@ -153,16 +156,14 @@ public class metisController {
                     textArea.getText()).toString(), saveAsTextField.getText());
 
             statusLabel.setTextFill(Color.GREEN);
-            statusLabel.setFont(new Font("Arial",15));
+            statusLabel.setFont(new Font("Arial", 15));
             statusLabel.setText("Save Completed!");
             try {
                 wait(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 initialize();
-
             }
-
             initialize();
         } catch (Exception e) {
             System.out.println(e);
@@ -178,38 +179,18 @@ public class metisController {
     }
 
     public void dbButtonPressed(ActionEvent actionEvent) throws IOException {
-        System.out.println("TODO dbButtonPressed programming needed");
+        dbREFRESH();
+        }
 
-        String fxmlDB = "tableviewer.fxml";
-        FXMLLoader loady = new FXMLLoader(getClass().getResource(fxmlDB));
-        Parent loadup = loady.load();
-        Stage dbStage = new Stage();
 
-        dbStage.setTitle("Overview");
-        dbStage.centerOnScreen();
-        dbStage.initModality(Modality.APPLICATION_MODAL);
-        dbStage.setScene(new Scene(loadup));
-
-        dbStage.showAndWait();
-
+    public void dbREFRESH() throws IOException {
+        List tlist = Fileread.fileReader();
+        for (Object l : tlist) {
+            textArea1.appendText(l + "\n");
+        }
     }
 
     public void afsluitButtonPressed(ActionEvent actionEvent) {
         System.out.println("TODO Afsluitbutton programming needed");
-
     }
-//
-//    public void popup() throws IOException {
-//        String fxmlPopup = "popup.fxml";
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPopup));
-//        Parent popup = loader.load();
-//        Stage popupStage = new Stage();
-//
-//        popupStage.getIcons().add(new Image("metis.jpg"));
-//        popupStage.setTitle("Metis - Goddess of good counsel, planning, cunning and wisdom. ~ grants you your wish.");
-//        popupStage.setScene(new Scene(popup));
-//        popupStage.initModality(Modality.APPLICATION_MODAL);
-//        popupStage.showAndWait();
-//    }
-
 }

@@ -35,7 +35,7 @@ public class tableviewerController {
     @FXML
     void initialize() throws IOException {
         assert textArea != null : "fx:id=\"textArea\" was not injected: check your FXML file 'tableviewer.fxml'.";
-                System.out.println(Fileread.fileReader());
+        System.out.println(Fileread.fileReader());
 
         List tlist = Fileread.fileReader();
         for (Object l:tlist) {
