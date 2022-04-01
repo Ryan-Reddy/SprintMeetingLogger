@@ -22,4 +22,4 @@ Ryan - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en e
 Thijs - gisteren nog niets, vandaag wellicht werken aan de UML klassendiagrammen
 Mohamed - gisteren bezig geweest met project vorige project, vandaag met thijs aan de UML backend
 Baian - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en evt controllers
-']
+'][Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 11:00:20, endtime= 17:03:11, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= 'FXMLS afgemaakt, Controllers aangemaakt voor alles, Inlogscherm uitgebreid']
