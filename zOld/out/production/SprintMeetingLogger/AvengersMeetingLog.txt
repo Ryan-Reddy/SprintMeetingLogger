@@ -10,3 +10,10 @@ Ryan - gisteren gewerkt aan directory, vandaag ga ik werken aan maken van basic 
 Oussama - gisteren niks gedaan sinds; vandaag werken aan klassendiagram en sequence diagram af. Even kijken of thijs en mees nog te vinden zijn.
 Baian - gisteren niks gedaan; vandaag werken aan GUIs beheerder, student docent. fxmls. ']
 [Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 11:05:19, endtime= 12:32:26, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'meeting FrontEnd, besproken plannen voor vandaag, apart fxmls maken. mohamed afwezig']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 18:30:07, endtime= 23:04:20, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'na vandaag de hele middag en ochtend aan JavaFX schermen te hebben gewerkt 
+kwamen Ik, Baian en Oussama bijeen om de huidige schermen te bespreken 
+en keuzes in ontwerp te maken, uiteindelijk GUIs afgemaakt voor Beheerderscherm. 
+Ook de klassendiagrammen en use cases verder uitgewerkt. 
+Morgen maken we de Controllers.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:34, endtime= 00:04:36, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:58, endtime= 00:05:00, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
