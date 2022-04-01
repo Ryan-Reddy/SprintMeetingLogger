@@ -40,3 +40,8 @@ Baian - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en 
 [Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 11:21:19, endtime= 11:21:26, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
 ~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
 ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 11:22:29, endtime= 11:22:33, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
+~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
+~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
+~|~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~|~
+']

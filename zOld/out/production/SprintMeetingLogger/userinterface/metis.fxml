@@ -14,13 +14,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
    <children>
-      <HBox alignment="CENTER" layoutX="76.0" layoutY="12.0" prefHeight="417.0" prefWidth="780.0" spacing="20.0">
+      <HBox alignment="CENTER" layoutX="76.0" layoutY="12.0" prefHeight="389.0" prefWidth="843.0" spacing="20.0">
          <children>
-            <HBox prefHeight="100.0" prefWidth="200.0">
+            <HBox prefHeight="370.0" prefWidth="200.0">
                <children>
-                  <VBox prefHeight="417.0" prefWidth="214.0">
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" prefHeight="368.0" prefWidth="200.0">
                      <children>
                         <VBox prefHeight="86.0" prefWidth="100.0" spacing="3.0">
                            <children>
@@ -47,37 +47,27 @@
                               <ComboBox fx:id="meetingTypeComboBox" layoutX="15.0" layoutY="165.0" prefWidth="150.0" promptText="Daily Standup" />
                            </children>
                            <padding>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                              <Insets left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </VBox>
-                        <HBox prefHeight="17.0" prefWidth="200.0" spacing="15.0">
-                           <children>
-                              <Button fx:id="afsluitButton" mnemonicParsing="false" onAction="#afsluitButtonPressed" text="Afsluiten" />
-                              <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
-                              <Button fx:id="opslaanButton" mnemonicParsing="false" onAction="#opslaanButtonPressed" text="Opslaan" />
-                           </children>
-                           <VBox.margin>
-                              <Insets left="10.0" top="20.0" />
-                           </VBox.margin>
-                        </HBox>
                      </children>
                      <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        <Insets left="5.0" right="5.0" top="5.0" />
                      </padding>
                   </VBox>
                </children>
             </HBox>
-            <VBox alignment="CENTER" prefHeight="417.0" prefWidth="479.0">
+            <VBox alignment="CENTER" prefHeight="389.0" prefWidth="662.0">
                <children>
                   <Label text="Notes:" />
-                  <TextArea fx:id="textArea" prefHeight="90.0" prefWidth="365.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.">
+                  <TextArea fx:id="textArea" prefHeight="129.0" prefWidth="623.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.">
                      <opaqueInsets>
                         <Insets top="30.0" />
                      </opaqueInsets>
                   </TextArea>
-                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView" fitHeight="107.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../pictures/metis.jpg" />
+                        <Image url="@../../../MeetingTracker/pictures/metis.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="30.0" />
@@ -90,7 +80,7 @@
                   </Button>
                   <TextField fx:id="saveAsTextField" alignment="BOTTOM_CENTER" prefHeight="25.0" prefWidth="279.0" text="db/AvengersMeetingLog.txt">
                      <VBox.margin>
-                        <Insets top="50.0" />
+                        <Insets top="10.0" />
                      </VBox.margin>
                   </TextField>
                </children>
@@ -103,7 +93,7 @@
             <Insets top="30.0" />
          </opaqueInsets>
       </HBox>
-      <VBox layoutX="19.0" layoutY="176.0" prefHeight="250.0" prefWidth="76.0" spacing="12.0">
+      <VBox layoutX="19.0" layoutY="176.0" prefHeight="210.0" prefWidth="76.0" spacing="12.0">
          <children>
             <Label prefHeight="17.0" prefWidth="72.0" text="Datum:" />
             <Label prefHeight="17.0" prefWidth="72.0" text="Begintijd:" />
@@ -112,11 +102,18 @@
             <Label layoutX="10.0" layoutY="97.0" prefHeight="17.0" prefWidth="72.0" text="Team:" />
             <Label layoutX="10.0" layoutY="126.0" prefHeight="17.0" prefWidth="72.0" text="Sprint:" />
             <Label layoutX="10.0" layoutY="155.0" prefHeight="17.0" prefWidth="72.0" text="Type:" />
-            <Label fx:id="statusLabel" text="Status: OK">
-               <VBox.margin>
-                  <Insets top="30.0" />
-               </VBox.margin>
-            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="21.0" layoutY="379.0" prefHeight="49.0" prefWidth="276.0" spacing="10.0">
+         <children>
+            <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" text="Status: OK" />
+            <HBox prefHeight="17.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="afsluitButton" mnemonicParsing="false" onAction="#afsluitButtonPressed" text="Afsluiten" />
+                  <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearButtonPressed" text="Clear" />
+                  <Button fx:id="opslaanButton" mnemonicParsing="false" onAction="#opslaanButtonPressed" text="Opslaan" />
+               </children>
+            </HBox>
          </children>
       </VBox>
    </children>
