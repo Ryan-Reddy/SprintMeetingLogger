@@ -16,3 +16,4 @@ en keuzes in ontwerp te maken, uiteindelijk GUIs afgemaakt voor Beheerderscherm.
 Ook de klassendiagrammen en use cases verder uitgewerkt. 
 Morgen maken we de Controllers.']
 [Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:34, endtime= 00:04:36, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:58, endtime= 00:05:00, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
