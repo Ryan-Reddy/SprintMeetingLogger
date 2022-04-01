@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class metisController {
-    private ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup Sprint 1", "Daily Standup Sprint 2", "Daily Standup Sprint 3", "Sprint Review", "Projecturen"));
+    private ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup Sprint 1", "Product Owner Meeting", "Sprint Review", "Projecturen"));
     private ObservableList<String> observableMeetingTypeList = FXCollections.observableList(meetingTypeList);
 
     private ArrayList<String> sprintNumList = new ArrayList(Arrays.asList("Sprint 0", "Sprint 1", "Sprint 2", "Sprint 3"));
