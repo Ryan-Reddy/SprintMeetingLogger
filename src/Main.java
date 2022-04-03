@@ -17,7 +17,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        //TODO Test todo push auto
         try {
             String fxmlMetis = "userinterface\\metis.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlMetis));
@@ -27,6 +26,7 @@ public class Main extends Application {
             stage.setTitle("Metis - Goddess of good counsel, planning, cunning and wisdom.");
             stage.setScene(new Scene(root));
             stage.show();
+            //TODO run test todo to issue
 
 
         } catch (IOException e) {
