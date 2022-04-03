@@ -15,6 +15,7 @@ public class Main extends Application {
         launch(args);
     }
 
+    //TODO make a new issue
     @Override
     public void start(Stage stage) throws IOException {
         try {
@@ -26,7 +27,7 @@ public class Main extends Application {
             stage.setTitle("Metis - Goddess of good counsel, planning, cunning and wisdom.");
             stage.setScene(new Scene(root));
             stage.show();
-            //TODO run test todo to issue
+
 
 
         } catch (IOException e) {
