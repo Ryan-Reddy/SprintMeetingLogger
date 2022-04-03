@@ -9,7 +9,12 @@ import javafx.stage.Stage;
 import javax.management.Notification;
 import java.io.IOException;
 
-//TODO write new issue
+// TODO this is a new issue !
+//  labels: question
+
+
+
+
 
 public class Main extends Application {
     public static void main(String[] args)  {
@@ -28,9 +33,7 @@ public class Main extends Application {
             stage.setTitle("Metis - Goddess of good counsel, planning, cunning and wisdom.");
             stage.setScene(new Scene(root));
             stage.show();
-
-
-
+            
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error!");
@@ -41,7 +44,8 @@ public class Main extends Application {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error!");
             alert.setHeaderText(e.getMessage());
-            alert.setContentText(e.toString());
+            String s = e.toString();
+            alert.setContentText(s);
             alert.showAndWait();
         }
     }
