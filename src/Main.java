@@ -9,13 +9,14 @@ import javafx.stage.Stage;
 import javax.management.Notification;
 import java.io.IOException;
 
+//TODO write new issue
+
 public class Main extends Application {
     public static void main(String[] args)  {
 
         launch(args);
     }
 
-    //TODO make a new issue
     @Override
     public void start(Stage stage) throws IOException {
         try {
