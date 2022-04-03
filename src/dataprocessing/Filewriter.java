@@ -7,21 +7,54 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Filewriter {
-    public static void filewriter(String newline, String path) throws IOException {
+    public static void filewriter(String newString, String path) throws IOException {
         System.out.println("programming needed in Filewriter.filewriter");
-        System.out.println(newline);
+        System.out.println(newString);
+
+
 
         System.out.println("=====================");
-        BufferedWriter bw = new BufferedWriter(new FileWriter(path, true));
-        BufferedWriter bw2 = new BufferedWriter(new FileWriter("db/AvengersMeetingLog_backup.txt", true));
-
         System.out.println("Opening file....");
-        bw.append(newline);
-        bw.newLine();
-        bw2.append(newline);
-        bw2.newLine();
+        BufferedWriter bw = new BufferedWriter(new FileWriter(path, true));
+        System.out.println("Opening file.... "+ path);
         System.out.println("Writing to file....");
+        bw.append(newString);
+        bw.newLine();
         bw.close();
+
+
+//        Ryans lokale AvengersMeetingLog_backup.txt
+        try {
+            System.out.println("=====================");
+            System.out.println("Opening file....");
+            String pathRyan = "C:\\Users\\RyRy\\IdeaProjects\\v1a-groep-4-the-avengers\\files\\AvengersMeetingLog_backup.txt";
+            BufferedWriter RyanAvengers_bw = new BufferedWriter(new FileWriter(pathRyan, true));
+            System.out.println("Writing to file....");
+            RyanAvengers_bw.append(newString);
+            RyanAvengers_bw.newLine();
+            RyanAvengers_bw.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+//
+////        TODO Oussamas lokale AvengersMeetingLog_backup.txt
+//        try {
+//            System.out.println("=====================");
+//            System.out.println("Opening file....");
+//
+//            String pathRyan = "C:\\Users\\RyRy\\IdeaProjects\\v1a-groep-4-the-avengers\\files\\AvengersMeetingLog_backup.txt";
+//            // TODO wijzig lokatie naar jouw locatie van deze file, dan zal die in dezelfde plek appenden !
+//
+//            BufferedWriter RyanAvengers_bw = new BufferedWriter(new FileWriter(pathRyan, true));
+//            System.out.println("Writing to file....");
+//            RyanAvengers_bw.append(newString);
+//            RyanAvengers_bw.newLine();
+//            RyanAvengers_bw.close();
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+
+
         System.out.println("Done!");
 
     }

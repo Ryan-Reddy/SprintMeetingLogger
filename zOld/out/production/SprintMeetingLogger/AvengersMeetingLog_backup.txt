@@ -1,0 +1,25 @@
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 13:00:21; endtime= 14:56:00; ryan= true; bayan= true; oussama= true; mees=true; mohamed= false,;note=  '
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 14:56:00; endtime= 23:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:06:00; endtime= 22:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:00:00; endtime= 18:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-24; starttime= 14:00:00; endtime= 18:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'een uurtje gewerkt aan de sprintbacklog, kort gestaakt, mohamed en Thijs niet aanwezig. ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-30, starttime= 15:00:49, endtime= 16:09:38, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Teammentaliteit besproken, Taken verdeeld - Team verdeeld in: Team frontend; Ryan, Baian, Mohamed Team backend; Oussama, Thijs, Mees. Daily standups, 10.30 am.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 10:31:11, endtime= 11:02:31, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= '- Meeting met Jos ingeplanned (als product manager);
+Daily standups
+Ryan - gisteren gewerkt aan directory, vandaag ga ik werken aan maken van basic fxmls, en de todo lijst.
+Oussama - gisteren niks gedaan sinds; vandaag werken aan klassendiagram en sequence diagram af. Even kijken of thijs en mees nog te vinden zijn.
+Baian - gisteren niks gedaan; vandaag werken aan GUIs beheerder, student docent. fxmls. ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 11:05:19, endtime= 12:32:26, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'meeting FrontEnd, besproken plannen voor vandaag, apart fxmls maken. mohamed afwezig']
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 18:30:07, endtime= 23:04:20, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'na vandaag de hele middag en ochtend aan JavaFX schermen te hebben gewerkt 
+kwamen Ik, Baian en Oussama bijeen om de huidige schermen te bespreken 
+en keuzes in ontwerp te maken, uiteindelijk GUIs afgemaakt voor Beheerderscherm. 
+Ook de klassendiagrammen en use cases verder uitgewerkt. 
+Morgen maken we de Controllers.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:34, endtime= 00:04:36, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:58, endtime= 00:05:00, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 10:36:04, endtime= 10:43:17, ryan= true, bayan= true, oussama= true, mees=false, mohamed= true, thijs= true, note= 'Oussama - gisteren classes aangemaakt, vandaag verder met de interfaces die zijn gemaakt
+Ryan - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en evt controllers
+Thijs - gisteren nog niets, vandaag wellicht werken aan de UML klassendiagrammen
+Mohamed - gisteren bezig geweest met project vorige project, vandaag met thijs aan de UML backend
+Baian - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en evt controllers
+']

@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class Main extends Application {
     public static void main(String[] args)  {
+
         launch(args);
     }
 
@@ -18,14 +19,15 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         //TODO Test todo push auto
         try {
-            String fxmlMetis = "userinterface/metis.fxml";
+            String fxmlMetis = "userinterface\\metis.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlMetis));
             Parent root = loader.load();
 
             stage.getIcons().add(new Image("metis.jpg"));
             stage.setTitle("Metis - Goddess of good counsel, planning, cunning and wisdom.");
             stage.setScene(new Scene(root));
-            stage.showAndWait();
+            stage.show();
+
 
         } catch (IOException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
