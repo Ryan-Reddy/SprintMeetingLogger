@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1344.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1344.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
    <children>
       <TabPane prefHeight="614.0" prefWidth="1344.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -98,7 +86,7 @@
                               <VBox alignment="CENTER" prefHeight="585.0" prefWidth="956.0">
                                  <children>
                                     <Label text="Notes:" />
-                                    <TextArea fx:id="textArea" prefHeight="227.0" prefWidth="732.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head.">
+                                    <TextArea fx:id="textArea" prefHeight="227.0" prefWidth="732.0" promptText="METIS was one of the elder Okeanides and the Titan-goddess of good counsel, planning, cunning and wisdom. She was a counsellor of Zeus during the Titan War and hatched the plan through which Kronos (Cronus) was forced to regurgitate his devoured children. In an odd reversal of fortune, Zeus swallowed Metis whole when a prophecy was revealed that she was destined to bear a son greater than his father. Metis afterwards bore a daughter, Athena, within the very belly of the god and equipped her with arms and armour before she was rebirthed from the god's head." text="Ryan: Sinds vorige keer: Vandaag: Obstakels: Baian: Sinds vorige keer: Vandaag: Obstakels: Oussama: Sinds vorige keer: Vandaag: Obstakels: Mohamed: Sinds vorige keer: Vandaag: Obstakels: Mees: Sinds vorige keer: Vandaag: Obstakels: Thijs: Sinds vorige keer: Vandaag: Obstakels: ">
                                        <opaqueInsets>
                                           <Insets top="30.0" />
                                        </opaqueInsets>

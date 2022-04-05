@@ -23,3 +23,9 @@ Thijs - gisteren nog niets, vandaag wellicht werken aan de UML klassendiagrammen
 Mohamed - gisteren bezig geweest met project vorige project, vandaag met thijs aan de UML backend
 Baian - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en evt controllers
 '][Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 11:00:20, endtime= 17:03:11, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= 'FXMLS afgemaakt, Controllers aangemaakt voor alles, Inlogscherm uitgebreid']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-05, starttime= 10:30:51, endtime= 11:07:18, ryan= true, bayan= true, oussama= true, mees=true, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: Werken aan sequence diagrammen Obstakels: Wacht op missende klassen van Thijs, wachtend op Mohamed.
+Baian: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: New Issues oplossen en bedenken, kijken of ik de roosters kan vullen met mockdata, Obstakels: Wacht op missende klassen van Thijs
+Oussama: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Mees files toegevoegd,Vandaag: Missende classes aanmaken, of ze nog krijgen vanuit Thijs Obstakels: Wacht nog op Thijs files, Vak, Les, Lokaal.
+Mohamed: NIET AANWEZIG (gebeld en gepingt)
+Mees: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: De Classes 5* kwaliteit maken. Obstakels: Ik mis Thijs. geprobeerd te bellen en berichten geen gehoor.
+Thijs: NIET AANWEZIG (gebeld en gepingt)']
