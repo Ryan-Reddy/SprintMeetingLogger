@@ -27,7 +27,7 @@ public class Filewriter {
         try {
             System.out.println("=====================");
             System.out.println("Opening file....");
-            String pathRyan = "C:\\Users\\RyRy\\IdeaProjects\\v1a-groep-4-the-avengers\\files\\AvengersMeetingLog_backup.txt";
+            String pathRyan = "F:\\Online syncs\\ONEDRIVE 2020 DEC\\OneDrive\\Documenten\\NEW-the-avengers\\files\\AvengersMeetingLog_backup.txt";
             BufferedWriter RyanAvengers_bw = new BufferedWriter(new FileWriter(pathRyan, true));
             System.out.println("Writing to file....");
             RyanAvengers_bw.append(newString);

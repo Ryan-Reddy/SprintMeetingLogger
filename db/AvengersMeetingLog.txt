@@ -29,3 +29,12 @@ Oussama: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Mee
 Mohamed: NIET AANWEZIG (gebeld en gepingt)
 Mees: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: De Classes 5* kwaliteit maken. Obstakels: Ik mis Thijs. geprobeerd te bellen en berichten geen gehoor.
 Thijs: NIET AANWEZIG (gebeld en gepingt)']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-07, starttime= 11:30:56, endtime= 12:27:58, ryan= true, bayan= true, oussama= true, mees=false, mohamed= true, thijs= false, note= 'Mees en thijs missten en omdat de meeting was uitgesteld door werk aan de repos meeting uitgesteld naar 4 uur vanmiddag']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-07, starttime= 15:56:20, endtime= 16:47:36, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: Vandaag: Rooster inzien/ Docentrooster inzien/klas toevoegen/inlogscherm Obstakels: 
+Baian: Sinds vorige keer: Vandaag: Rooster inzien/ Docentrooster inzien/klas toevoegen/inlogscherm Obstakels: 
+Oussama: Sinds vorige keer: Vandaag: Presentie bijhouden/ziekmelden/absentielijst inzien klas/absentmelden/aanwezigheidspercentage zien/beter melden Obstakels: 
+Mohamed: Sinds vorige keer:  Bezig geweest met UML Absentiemelding Vandaag: User toevoegen Docent/Student/beheerder 2 Obstakels: 
+Mees: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/maken/vaak afwezige studenten inzien/lokaal toevoegen Obstakels: 
+Thijs: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/maken/vaak afwezige studenten inzien/lokaal toevoegen Obstakels: 
+
+Allen gewerkt aan Sprint evaluatie, grootste deel team is gisteren en vanochtend uren bezig geweest met het repareren van git repos.']

@@ -75,6 +75,7 @@
                                           <Insets left="5.0" right="5.0" top="5.0" />
                                        </padding>
                                     </VBox>
+                                    <Button layoutX="32.0" layoutY="433.0" mnemonicParsing="false" onAction="#initialize" prefHeight="25.0" prefWidth="285.0" text="Destroy everything but the moon" />
                                  </children>
                                  <padding>
                                     <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
