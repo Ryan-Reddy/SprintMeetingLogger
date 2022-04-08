@@ -38,3 +38,10 @@ Mees: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/
 Thijs: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/maken/vaak afwezige studenten inzien/lokaal toevoegen Obstakels: 
 
 Allen gewerkt aan Sprint evaluatie, grootste deel team is gisteren en vanochtend uren bezig geweest met het repareren van git repos.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-08, starttime= 16:03:15, endtime= 16:24:25, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: Gewerkt datamodel, filewriter, general hulp, UML geupdate Vandaag: db structure werkt, frontend functionaliteit met mo afmaken Obstakels: we moeten even meetten over hoe we de lessen nou precies opslaan. 
+Baian: Sinds vorige keer:  Gewerkt datamodel, filewriter en nog steeds Vandaag: data weergeven in de tableview Obstakels: Rooster, Tijd 
+Oussama: Sinds vorige keer: Gewerkt aan DocentScherm Vandaag: Docentscherm afmaken! Obstakels: 
+Mohamed: Sinds vorige keer: User toevoegen beheerderscherm Vandaag: filewrite fixen! En de andere formulieren even beginnen evt. Obstakels: 
+Mees: Sinds vorige keer: Bezig met issues als les inzien en les maken Vandaag: Werken aan de aangewezen issues, les inzien en les maken. Meeting met Ryan, Bayan en Oussama. Obstakels: Liep tegenaan dat ik even niet wist waar te beginnen, had wellicht beter even kunnen contacten. 
+Thijs: Sinds vorige keer: Nog niet heel veel kunnen doen.. Begonnen aan vak inzien/maken Vandaag: Nog even vanavond hard aan zitten.  Obstakels: Error maandag is null, kijken we zo naar.
+']
