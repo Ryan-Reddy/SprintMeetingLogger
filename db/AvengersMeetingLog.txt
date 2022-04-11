@@ -45,3 +45,18 @@ Mohamed: Sinds vorige keer: User toevoegen beheerderscherm Vandaag: filewrite fi
 Mees: Sinds vorige keer: Bezig met issues als les inzien en les maken Vandaag: Werken aan de aangewezen issues, les inzien en les maken. Meeting met Ryan, Bayan en Oussama. Obstakels: Liep tegenaan dat ik even niet wist waar te beginnen, had wellicht beter even kunnen contacten. 
 Thijs: Sinds vorige keer: Nog niet heel veel kunnen doen.. Begonnen aan vak inzien/maken Vandaag: Nog even vanavond hard aan zitten.  Obstakels: Error maandag is null, kijken we zo naar.
 ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-09, starttime= 16:04:55, endtime= 16:38:37, ryan= true, bayan= true, oussama= true, mees=true, mohamed= false, thijs= true, note= 'Ryan: Sinds vorige keer: Inlogscherm globaalscherm verbeterd, gewerkt aan roosters, readme/license display, objectfilewriter Vandaag: profieldisplay, docentscherm info, Obstakels:  te weinig contact vanuit andere teamleden.
+Baian: Sinds vorige keer: Docent en Student Datamodel Roosterscherm, goed verbonden! Vandaag: Meer werken aan de roosters aanmaken en deze weergeven. Obstakels: Vertragingen van roosteraanmaken deze was toegewezen aan Thijs
+Oussama: Sinds vorige keer: Studentscherm absent melden ziek melden, paar kleine aanpassingen maken dan is die klaar ! Vandaag: Afmaken en dan kan ik percentages laten zien ! Obstakels: 
+~Afwezig~ Mohamed: Sinds vorige keer: Vandaag: Obstakels: ~Afwezig~ 
+Mees: Sinds vorige keer: Backend issues, gewerkt aan objectfilewriter database Vandaag: Les inzien en les maken,  wachtend op thijs push-beheerderscherm formulieren werkend krijgen Obstakels: Weet nu niet precies waar hij aan gewerkt heeft. (geeft wel aan; vak inzien en maken zijn zowat af)
+Thijs: via de chat - Sinds vorige keer: vak inzien en maken zijn zowat af Vandaag: laatste ding fixen voor vak maken en dan denk ik vaak afwezige student inzien te gaan doenObstakels: 
+Thijs afwezig, vooraf gemeldt, moest werken heeft een dailystandup chat gestuurd.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 11:07:24, endtime= 11:23:23, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Readme en license toegevoegd, inlogscherm verbeterd, werkendgeheugen uitgewerkt. Vandaag: Obstakels: Oververmoeid, chagerijnig, overwhelmed.
+Baian: Sinds vorige keer:Gewerkt aan docent eigen rooster en aanwezigheid Vandaag: Weer overnieuw Obstakels: Alles is weer weg, ging mis met een push pull en commit
+Oussama: Sinds vorige keer: Vandaag: Obstakels: 
+Mohamed: Sinds vorige keer: Vandaag: Obstakels: 
+Mees: Sinds vorige keer: Vandaag: Obstakels: 
+Thijs: Sinds vorige keer: Vandaag: Obstakels: 
+Straks doen we er nog een om 12, hopelijk meer mensen erbij.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 11:43:30, endtime= 11:45:59, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'Oussama: Sinds vorige keer: Gewerkt aan klassendiagram, paar kleine aanpassingen gedaan, Vandaag: rooster inzien docentscherm werkend krijgen met baian,  Obstakels: Tijdnood, lastig samenwerken met anderen als er dingen kapot gaan tijdens een push']
