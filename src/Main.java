@@ -6,6 +6,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+
 import javax.management.Notification;
 import java.io.IOException;
 
@@ -18,14 +19,13 @@ import java.io.IOException;
 
 public class Main extends Application {
     public static void main(String[] args)  {
-
         launch(args);
     }
 
     @Override
     public void start(Stage stage) throws IOException {
         try {
-            String fxmlMetis = "userinterface\\metis.fxml";
+            String fxmlMetis = ".\\userinterface\\metis.fxml";
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlMetis));
             Parent root = loader.load();
 
@@ -35,12 +35,16 @@ public class Main extends Application {
             stage.show();
             
         } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("_Main.java_IOException_");
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error!");
             alert.setHeaderText(e.toString());
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("_Main.java_Exception_");
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error!");
             alert.setHeaderText(e.getMessage());
