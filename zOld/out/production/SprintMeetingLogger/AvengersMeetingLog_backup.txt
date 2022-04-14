@@ -1,4 +1,4 @@
-[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 13:00:21; endtime= 14:56:00; ryan= true; bayan= true; oussama= true; mees=true; mohamed= false,;note=  '
+[Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 13:00:21; endtime= 14:56:00; ryan= true; bayan= true; oussama= true; mees=true; mohamed= false,;note=  ']
 [Meeting subject= 'sprint 1 scrum'; date= 2022-03-18; starttime= 14:56:00; endtime= 23:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
 [Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:06:00; endtime= 22:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
 [Meeting subject= 'sprint 1 scrum'; date= 2022-03-19; starttime= 14:00:00; endtime= 18:54:00; ryan= true; bayan= true; oussama= true; mees=false; mohamed= false; note= 'Mrtijn was ook aanwezig;Thijs was ziek; Mohamed afwezig.']
@@ -10,10 +10,10 @@ Ryan - gisteren gewerkt aan directory, vandaag ga ik werken aan maken van basic 
 Oussama - gisteren niks gedaan sinds; vandaag werken aan klassendiagram en sequence diagram af. Even kijken of thijs en mees nog te vinden zijn.
 Baian - gisteren niks gedaan; vandaag werken aan GUIs beheerder, student docent. fxmls. ']
 [Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 11:05:19, endtime= 12:32:26, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'meeting FrontEnd, besproken plannen voor vandaag, apart fxmls maken. mohamed afwezig']
-[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 18:30:07, endtime= 23:04:20, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'na vandaag de hele middag en ochtend aan JavaFX schermen te hebben gewerkt 
-kwamen Ik, Baian en Oussama bijeen om de huidige schermen te bespreken 
-en keuzes in ontwerp te maken, uiteindelijk GUIs afgemaakt voor Beheerderscherm. 
-Ook de klassendiagrammen en use cases verder uitgewerkt. 
+[Meeting subject= 'sprint 1 scrum', date= 2022-03-31, starttime= 18:30:07, endtime= 23:04:20, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'na vandaag de hele middag en ochtend aan JavaFX schermen te hebben gewerkt
+kwamen Ik, Baian en Oussama bijeen om de huidige schermen te bespreken
+en keuzes in ontwerp te maken, uiteindelijk GUIs afgemaakt voor Beheerderscherm.
+Ook de klassendiagrammen en use cases verder uitgewerkt.
 Morgen maken we de Controllers.']
 [Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:34, endtime= 00:04:36, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
 [Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 00:04:58, endtime= 00:05:00, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= '']
@@ -22,4 +22,78 @@ Ryan - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en e
 Thijs - gisteren nog niets, vandaag wellicht werken aan de UML klassendiagrammen
 Mohamed - gisteren bezig geweest met project vorige project, vandaag met thijs aan de UML backend
 Baian - gisteren interfaces aangemaakt, vandaag verder met andere interfaces en evt controllers
+'][Meeting subject= 'sprint 1 scrum', date= 2022-04-01, starttime= 11:00:20, endtime= 17:03:11, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= 'FXMLS afgemaakt, Controllers aangemaakt voor alles, Inlogscherm uitgebreid']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-05, starttime= 10:30:51, endtime= 11:07:18, ryan= true, bayan= true, oussama= true, mees=true, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: Werken aan sequence diagrammen Obstakels: Wacht op missende klassen van Thijs, wachtend op Mohamed.
+Baian: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: New Issues oplossen en bedenken, kijken of ik de roosters kan vullen met mockdata, Obstakels: Wacht op missende klassen van Thijs
+Oussama: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Mees files toegevoegd,Vandaag: Missende classes aanmaken, of ze nog krijgen vanuit Thijs Obstakels: Wacht nog op Thijs files, Vak, Les, Lokaal.
+Mohamed: NIET AANWEZIG (gebeld en gepingt)
+Mees: Sinds vorige keer: Als groep gewerkt aan user stories en Use Cases. Vandaag: De Classes 5* kwaliteit maken. Obstakels: Ik mis Thijs. geprobeerd te bellen en berichten geen gehoor.
+Thijs: NIET AANWEZIG (gebeld en gepingt)']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-07, starttime= 11:30:56, endtime= 12:27:58, ryan= true, bayan= true, oussama= true, mees=false, mohamed= true, thijs= false, note= 'Mees en thijs missten en omdat de meeting was uitgesteld door werk aan de repos meeting uitgesteld naar 4 uur vanmiddag']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-07, starttime= 15:56:20, endtime= 16:47:36, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: Vandaag: Rooster inzien/ Docentrooster inzien/klas toevoegen/inlogscherm Obstakels:
+Baian: Sinds vorige keer: Vandaag: Rooster inzien/ Docentrooster inzien/klas toevoegen/inlogscherm Obstakels:
+Oussama: Sinds vorige keer: Vandaag: Presentie bijhouden/ziekmelden/absentielijst inzien klas/absentmelden/aanwezigheidspercentage zien/beter melden Obstakels:
+Mohamed: Sinds vorige keer:  Bezig geweest met UML Absentiemelding Vandaag: User toevoegen Docent/Student/beheerder 2 Obstakels:
+Mees: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/maken/vaak afwezige studenten inzien/lokaal toevoegen Obstakels:
+Thijs: Sinds vorige keer: Vandaag: Les inzien/les maken/Rooster maken/vak inzien/maken/vaak afwezige studenten inzien/lokaal toevoegen Obstakels:
+
+Allen gewerkt aan Sprint evaluatie, grootste deel team is gisteren en vanochtend uren bezig geweest met het repareren van git repos.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-08, starttime= 16:03:15, endtime= 16:24:25, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: Gewerkt datamodel, filewriter, general hulp, UML geupdate Vandaag: db structure werkt, frontend functionaliteit met mo afmaken Obstakels: we moeten even meetten over hoe we de lessen nou precies opslaan.
+Baian: Sinds vorige keer:  Gewerkt datamodel, filewriter en nog steeds Vandaag: data weergeven in de tableview Obstakels: Rooster, Tijd
+Oussama: Sinds vorige keer: Gewerkt aan DocentScherm Vandaag: Docentscherm afmaken! Obstakels:
+Mohamed: Sinds vorige keer: User toevoegen beheerderscherm Vandaag: filewrite fixen! En de andere formulieren even beginnen evt. Obstakels:
+Mees: Sinds vorige keer: Bezig met issues als les inzien en les maken Vandaag: Werken aan de aangewezen issues, les inzien en les maken. Meeting met Ryan, Bayan en Oussama. Obstakels: Liep tegenaan dat ik even niet wist waar te beginnen, had wellicht beter even kunnen contacten.
+Thijs: Sinds vorige keer: Nog niet heel veel kunnen doen.. Begonnen aan vak inzien/maken Vandaag: Nog even vanavond hard aan zitten.  Obstakels: Error maandag is null, kijken we zo naar.
 ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-09, starttime= 16:04:55, endtime= 16:38:37, ryan= true, bayan= true, oussama= true, mees=true, mohamed= false, thijs= true, note= 'Ryan: Sinds vorige keer: Inlogscherm globaalscherm verbeterd, gewerkt aan roosters, readme/license display, objectfilewriter Vandaag: profieldisplay, docentscherm info, Obstakels:  te weinig contact vanuit andere teamleden.
+Baian: Sinds vorige keer: Docent en Student Datamodel Roosterscherm, goed verbonden! Vandaag: Meer werken aan de roosters aanmaken en deze weergeven. Obstakels: Vertragingen van roosteraanmaken deze was toegewezen aan Thijs
+Oussama: Sinds vorige keer: Studentscherm absent melden ziek melden, paar kleine aanpassingen maken dan is die klaar ! Vandaag: Afmaken en dan kan ik percentages laten zien ! Obstakels:
+~Afwezig~ Mohamed: Sinds vorige keer: Vandaag: Obstakels: ~Afwezig~
+Mees: Sinds vorige keer: Backend issues, gewerkt aan objectfilewriter database Vandaag: Les inzien en les maken,  wachtend op thijs push-beheerderscherm formulieren werkend krijgen Obstakels: Weet nu niet precies waar hij aan gewerkt heeft. (geeft wel aan; vak inzien en maken zijn zowat af)
+Thijs: via de chat - Sinds vorige keer: vak inzien en maken zijn zowat af Vandaag: laatste ding fixen voor vak maken en dan denk ik vaak afwezige student inzien te gaan doenObstakels:
+Thijs afwezig, vooraf gemeldt, moest werken heeft een dailystandup chat gestuurd.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 11:07:24, endtime= 11:23:23, ryan= true, bayan= true, oussama= false, mees=false, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Readme en license toegevoegd, inlogscherm verbeterd, werkendgeheugen uitgewerkt. Vandaag: Obstakels: Oververmoeid, chagerijnig, overwhelmed.
+Baian: Sinds vorige keer:Gewerkt aan docent eigen rooster en aanwezigheid Vandaag: Weer overnieuw Obstakels: Alles is weer weg, ging mis met een push pull en commit
+Oussama: Sinds vorige keer: Vandaag: Obstakels:
+Mohamed: Sinds vorige keer: Vandaag: Obstakels:
+Mees: Sinds vorige keer: Vandaag: Obstakels:
+Thijs: Sinds vorige keer: Vandaag: Obstakels:
+Straks doen we er nog een om 12, hopelijk meer mensen erbij.']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 11:43:30, endtime= 11:45:59, ryan= true, bayan= true, oussama= true, mees=false, mohamed= false, thijs= false, note= 'Oussama: Sinds vorige keer: Gewerkt aan klassendiagram, paar kleine aanpassingen gedaan, Vandaag: rooster inzien docentscherm werkend krijgen met baian,  Obstakels: Tijdnood, lastig samenwerken met anderen als er dingen kapot gaan tijdens een push']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 16:08:15, endtime= 16:26:33, ryan= true, bayan= false, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: vandaag overdag wat kleine dingen aan Lists en datamanagenment Vandaag: Obstakels: uitgeput tot 5 uur doorgewerkt
+Baian: Sinds vorige keer: Vandaag: Obstakels: was er vanochtend en vannacht,
+Oussama: Sinds vorige keer: Sinds vanochtend nog meekijken met thijs Vandaag: fixes uitvoeren Obstakels:
+Mohamed: Sinds vorige keer:  Bezig met darkmode Vandaag: verder met darkmode Obstakels: mapstructuur git clone werkt niet,
+Mees: Sinds vorige keer: Vandaag: Obstakels:
+Thijs: Sinds vorige keer: Buttons docentrooster en laten zien, popup buttons, logout button. Meegeholpen filesystem Vandaag: klasrooster voor docent inzien, andere random fixes en code opschonen Obstakels: ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 16:31:54, endtime= 16:33:56, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Vandaag: Obstakels: Baian: Sinds vorige keer: Vandaag: Obstakels: Oussama: Sinds vorige keer: Vandaag: Obstakels: Mohamed: Sinds vorige keer: Vandaag: Obstakels: Mees: Sinds vorige keer: Vandaag: Obstakels: Thijs: Sinds vorige keer: Vandaag: Obstakels: ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 17:30:01, endtime= 17:56:10, ryan= false, bayan= false, oussama= false, mees=true, mohamed= false, thijs= false, note= 'Mees: Sinds vorige keer: Front end dingen code opgeruimd en opgeschoond
+Vandaag: commit resetten en nu ga ik opnieuw pullen en mergen
+Obstakels: Mn mic stond net uit en ik zat in mezelf te praten :(((']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-11, starttime= 17:30:01, endtime= 18:37:06, ryan= false, bayan= false, oussama= false, mees=true, mohamed= false, thijs= false, note= 'Mees: Sinds vorige keer: Front end dingen code opgeruimd en opgeschoond
+Vandaag: commit resetten en nu ga ik opnieuw pullen en mergen
+Obstakels: Mn mic stond net uit en ik zat in mezelf te praten :(((']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-12, starttime= 16:07:54, endtime= 16:47:36, ryan= true, bayan= true, oussama= true, mees=true, mohamed= true, thijs= true, note= 'Ryan: Sinds vorige keer: Listgetters en setters database goed werkend gekregen, Databaselistbijschrijver gemaakt testcases begonnen, dummydata generators aangemaakt,list voor beheerdersscherm met alle users, en meetingcontroller display Vandaag Endlist maken, database afmaken. : Obstakels:
+Baian: Sinds vorige keer: Datamodelz van beheerscherm, code opgeschoond, kleine aanpassingen Vandaag: In elk geval eerst testcases aanmaken Obstakels:
+Oussama: Sinds vorige keer: Unittests ontwikkelen Vandaag: Nu nog mee bezig Obstakels:
+Mohamed: Sinds vorige keer: Gisteren bezig met de Dark mode 90% klaar, Vandaag: knop zelf van kleur veranderen connectie leggen tussen Obstakels: Nu even met het inlog scherm!
+Mees: Sinds vorige keer: Back end code opgeruimd (classes) Vandaag: Documentie Class diagrams en UML Obstakels:
+Thijs: Sinds vorige keer: Lesgenerator gemaakt, To Do s opgeruimd, beheerschermcontroller dingen, beheerschermdatamodel-Roosterlessen in een rij gezet. Code opgeschoond Vandaag: Dit implementeren Obstakels: ']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-12, starttime= 20:09:14, endtime= 20:20:13, ryan= true, bayan= false, oussama= true, mees=false, mohamed= false, thijs= true, note= 'Ryan: Sinds vorige keer: User formulier in beheerder afgemaakt Laatste uur: Uml gaan bijstaan Obstakels:
+Baian: Sinds vorige keer: Laatste uur: Obstakels:
+Oussama: Sinds vorige keer: Tests Laatste uur: Powerpoint Obstakels:
+Mohamed: Sinds vorige keer: Implementeren controller overerving voor dark mode Laatste uur: daarmee verder Obstakels: lezen duurt lang
+Mees: Sinds vorige keer:  bezig met seq diagrammen Laatste uur: moeizaam seq diagrammen maken, nu vooral nog business rules geschreven Obstakels:
+Thijs: Sinds vorige keer: Code opruimen Laatste uur: Niet sterven Obstakels:
+
+Flipped it (╯°□°）╯︵ ┻━┻
+De finale list voor Vandaag 12-04:
+  - [x] Code Opschonen
+  - [?] Business rules uitschrijven
+  - [ ] UML uittekenen
+  - [x] Nog meer data erin krijgen
+  - [?]  Unit Testcases uitwerken
+  - [x] Endlist maken
+  - [?] Darkmode werkend krijgen
+then.. we unflip it ┬─┬ ノ( ゜-゜ノ)']
+[Meeting subject= 'sprint 1 scrum', date= 2022-04-14, starttime= 15:35:16, endtime= 15:35:58, ryan= true, bayan= false, oussama= false, mees=false, mohamed= false, thijs= false, note= 'Ryan: Sinds vorige keer: Vandaag: Obstakels: Baian: Sinds vorige keer: Vandaag: Obstakels: Oussama: Sinds vorige keer: Vandaag: Obstakels: Mohamed: Sinds vorige keer: Vandaag: Obstakels: Mees: Sinds vorige keer: Vandaag: Obstakels: Thijs: Sinds vorige keer: Vandaag: Obstakels: ']
