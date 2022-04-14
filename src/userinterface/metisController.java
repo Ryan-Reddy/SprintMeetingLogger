@@ -27,6 +27,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class metisController {
     private final ArrayList<String> meetingTypeList = new ArrayList(Arrays.asList("Scrum", "Daily Standup Sprint 1", "Product Owner Meeting", "Sprint Review", "Projecturen"));
@@ -202,7 +204,7 @@ public class metisController {
     }
 
     public void opslaanButtonPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
-        bgtabPane.setStyle("-fx-background-color: #ff0120; -fx-border-width: 5px;");
+        bgtabPane.setStyle("-fx-background-color: #5dc7dc; -fx-border-width: 5px;");
 
         try {
             Filewriter.filewriter(new Meeting(ryanCheckBox.isSelected(), baianCheckBox.isSelected(), oussamaCheckBox.isSelected(), meesCheckBox.isSelected(), mohamedCheckBox.isSelected(), thijsCheckBox.isSelected(), "sprint 1 scrum", DatePicker.getValue(), timeTextField.getText(), endTimeTextField.getText(), textArea.getText()).toString(), saveAsTextField.getText());
@@ -239,16 +241,22 @@ public class metisController {
 
 
     public void dbREFRESH() throws IOException {
-        List tlist = Fileread.fileReader();
-        for (Object l : tlist) {
-            System.out.println(l+"+++++++++++++++++++++++++++++++++++++++++++");
-//            String[] parts = l.toString().split(",");
-//            System.out.println(l);
-//            System.out.println(parts[0]);
-//            System.out.println(parts[1]);
+        List tlist = Fileread.fileReader(); //read file per line
+        String listString = String.join("\n",tlist); //concatenate entire file to one string
 
-//            alleMeetingsUitLogList.add((new Meeting()) l);
-            textArea1.appendText(l + "\n");
+        Pattern p = Pattern.compile("\\{(.*?)\\}"); //pattern to split file
+        Matcher m = p.matcher(listString);
+        while(m.find())
+        {
+            String meetingUitLogString = m.group(1);
+            m.group(1); //is your string. do what you want
+            textArea1.appendText(meetingUitLogString + "\n");
+            String[] meetParts = meetingUitLogString.split(";");
+            System.out.println(meetParts[0]);
+            System.out.println(meetParts[3]);
+            System.out.println(meetParts[5]);
+            System.out.println(meetParts[7]);
+
         }
     }
 

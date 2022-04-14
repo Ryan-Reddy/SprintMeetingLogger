@@ -52,17 +52,17 @@ public class Meeting {
     public String toString() {
         if (endTime.equals("<now>")) {
             String s =
-                    "[Meeting subject= '" + subject +
-                    "', date= " + date +
-                    ", starttime= " + time +
-                    ", endtime= " + nowEndTime +
-                    ", ryan= " + ryan +
-                    ", bayan= " + bayan +
-                    ", oussama= " + oussama +
-                    ", mees=" + mees +
-                    ", mohamed= " + mohamed +
-                    ", thijs= " + thijs +
-                    ", note= '" + note + "']";
+                    "{Meeting subject= '" + subject +
+                    "'; date= " + date +
+                    "; starttime= " + time +
+                    "; endtime= " + nowEndTime +
+                    "; ryan= " + ryan +
+                    "; bayan= " + bayan +
+                    "; oussama= " + oussama +
+                    "; mees=" + mees +
+                    "; mohamed= " + mohamed +
+                    "; thijs= " + thijs +
+                    "; note= '" + note.replace("\n","") + "'}";
             return s;
         } else {
             String s =
