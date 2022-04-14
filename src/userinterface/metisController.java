@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
@@ -15,6 +16,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -45,6 +47,8 @@ public class metisController {
     private final ObservableList<String> observableSprintNumList = FXCollections.observableList(sprintNumList);
     private final ArrayList<String> teamList = new ArrayList(Arrays.asList("The Avengers"));
     private final ObservableList<String> observableTeamList = FXCollections.observableList(teamList);
+    @FXML
+    private AnchorPane anchorPaneALLmeetis;
     @FXML
     public TableView<MeetingDataModel> tableView;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -148,9 +152,12 @@ public class metisController {
 
     @FXML
     private Label varLabelTotMeetings;
+    @FXML
+    private boolean style=false;
 
 
     private ArrayList<Meeting> alleMeetingsUitLogList;
+
 
     @FXML
         // This method is called by the FXMLLoader when initialization is complete
@@ -186,7 +193,7 @@ public class metisController {
         try {
             dbREFRESH();
         } catch (IOException e) {
-//            e.printStackTrace();
+            e.printStackTrace();
             System.out.println("The database cannot be loaded:\n" + e);
         } catch (ParseException e) {
             e.printStackTrace();
@@ -226,12 +233,7 @@ public class metisController {
             statusLabel.setFont(new Font("Arial",
                                          15));
             statusLabel.setText("Save Completed!");
-            try {
-                wait(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                initialize();
-            }
+
             initialize();
         } catch (Exception e) {
             System.out.println(e);
@@ -246,6 +248,19 @@ public class metisController {
         statusLabel.setText("Clearing.");
         wait(1500);
         initialize();
+    }
+
+    @FXML
+    public boolean darkModeButtonPressed(ActionEvent event) {
+        Scene s = anchorPaneALLmeetis.getScene();
+            s.setUserAgentStylesheet("userinterface/newDarkMode.css");
+            return style=true;
+    }
+    @FXML
+    public boolean lightModeButtonPressed(ActionEvent event) {
+        Scene s = anchorPaneALLmeetis.getScene();
+        s.setUserAgentStylesheet("userinterface/normalModeStyle.css");
+        return style=false;
     }
 
     public void dbButtonPressed(ActionEvent actionEvent) throws IOException, ParseException {
