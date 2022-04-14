@@ -189,6 +189,8 @@ public class metisController {
         } catch (IOException e) {
 //            e.printStackTrace();
             System.out.println("The database cannot be loaded:\n" + e);
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
 
         statusLabel.setTextFill(Color.BLACK);
@@ -201,6 +203,7 @@ public class metisController {
         sprintComboBox.setItems(observableSprintNumList);
         meetingTypeComboBox.setItems(observableMeetingTypeList);
         imageView.setImage(new Image("metis.jpg"));
+
     }
 
     public void opslaanButtonPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
@@ -236,31 +239,14 @@ public class metisController {
 
     public void dbButtonPressed(ActionEvent actionEvent) throws IOException, ParseException {
         dbREFRESH();
+    }
+
+
+    public void dbREFRESH() throws IOException, ParseException {
         fillDataList();
     }
 
-
-    public void dbREFRESH() throws IOException {
-        List tlist = Fileread.fileReader(); //read file per line
-        String listString = String.join("\n",tlist); //concatenate entire file to one string
-
-        Pattern p = Pattern.compile("\\{(.*?)\\}"); //pattern to split file
-        Matcher m = p.matcher(listString);
-        while(m.find())
-        {
-            String meetingUitLogString = m.group(1);
-            m.group(1); //is your string. do what you want
-            textArea1.appendText(meetingUitLogString + "\n");
-            String[] meetParts = meetingUitLogString.split(";");
-            System.out.println(meetParts[0]);
-            System.out.println(meetParts[3]);
-            System.out.println(meetParts[5]);
-            System.out.println(meetParts[7]);
-
-        }
-    }
-
-    private void fillDataList() throws ParseException {
+    private void fillDataList() throws ParseException, IOException {
         ObservableList<MeetingDataModel> dataList = FXCollections.observableArrayList();
         MeetingDataModel dataModel;
         String meetingNaam = "";
@@ -275,105 +261,46 @@ public class metisController {
         String thijs = "";
         String note = "";
 
+        List tlist = Fileread.fileReader(); //read file per line
+        String listString = String.join("\n",tlist); //concatenate entire file to one string
 
-//
-//        for (Meeting les : ingelogde.getKlas().getAlleLessenVanDezeKlas()) {
-//                if (les.getTijd().getHour() == uur) {
-//                    if (weekNummerVanDatum(les.getDatum()) == weekNummer) {
-//                        DayOfWeek day = les.getDatum().getDayOfWeek();
-//                        switch (day) {
-//                            case MONDAY -> {
-//                                if (maandag.equals("")) {
-//                                    maandag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    maandag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case TUESDAY -> {
-//                                if (dinsdag.equals("")) {
-//                                    dinsdag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    dinsdag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case WEDNESDAY -> {
-//                                if (woensdag.equals("")) {
-//                                    woensdag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    woensdag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case THURSDAY -> {
-//                                if (donderdag.equals("")) {
-//                                    donderdag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    donderdag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case FRIDAY -> {
-//                                if (vrijdag.equals("")) {
-//                                    vrijdag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    vrijdag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case SATURDAY -> {
-//                                if (zaterdag.equals("")) {
-//                                    zaterdag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    zaterdag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                            case SUNDAY -> {
-//                                if (zondag.equals("")) {
-//                                    zondag = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    lesuur = true;
-//                                } else {
-//                                    zondag2 = les.getTijd().toString() + "\n" + les.getVak().toString() + "\n" + les.getDatum().toString();
-//                                    duplicate = true;
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            if (lesuur) {
-//                dataModel = new StudentSchermDataModel(maandag, dinsdag, woensdag, donderdag, vrijdag, zaterdag, zondag);
-//                dataList.add(dataModel);
-//                if (duplicate) {
-//                    dataModel2 = new StudentSchermDataModel(maandag2, dinsdag2, woensdag2, donderdag2, vrijdag2, zaterdag2, zondag2);
-//                    dataList.add(dataModel2);
-//                }
-//            }
-//            maandag = "";
-//            maandag2 = "";
-//            dinsdag = "";
-//            dinsdag2 = "";
-//            woensdag = "";
-//            woensdag2 = "";
-//            donderdag = "";
-//            donderdag2 = "";
-//            vrijdag = "";
-//            vrijdag2 = "";
-//            zaterdag = "";
-//            zaterdag2 = "";
-//            zondag = "";
-//            zondag2 = "";
-//        }
+        Pattern p = Pattern.compile("\\{(.*?)\\}"); //pattern to split file
+        Matcher m = p.matcher(listString);
+        while(m.find()) {
+            String meetingUitLogString = m.group(1);                    //is your string. do what you want
+            textArea1.appendText(meetingUitLogString + "\n");
+            String[] meetParts = meetingUitLogString.split(";");
+
+            System.out.println("this"+meetingUitLogString);
+
+            meetingNaam = meetParts[0];
+            datum =     meetParts[1];
+            starttijd = meetParts[2];
+            eindtijd =  meetParts[3];
+            ryan =      meetParts[4];
+            bayan =     meetParts[5];
+            oussama =meetParts[6];
+            mees =meetParts[7];
+            mohamed =meetParts[8];
+            thijs =meetParts[9];
+            note =meetParts[10];
+
+            dataModel = new MeetingDataModel(
+                    meetingNaam,
+                    datum,
+                    starttijd,
+                    eindtijd,
+                    ryan,
+                    bayan,
+                    oussama,
+                    mees,
+                    mohamed,
+                    thijs,
+                    note);
+            dataList.add(dataModel);
+        }
     tableView.getItems().setAll(dataList);
-//    }
+
     }
     public void afsluitButtonPressed(ActionEvent actionEvent) {
         bgtabPane.setStyle("-fx-background-color: #ff0648; -fx-border-width: 5px;");
