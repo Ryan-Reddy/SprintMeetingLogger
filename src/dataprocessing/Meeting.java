@@ -1,9 +1,9 @@
 package dataprocessing;
 
-import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 public class Meeting {
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
@@ -37,8 +37,7 @@ public class Meeting {
 
     @Override
     public boolean equals(Object o) {
-        boolean GelijkeObjecten = false;
-        if (!(o instanceof Meeting) || o == null) {
+        if (!(o instanceof Meeting)) {
             return false;
         }
         Meeting m = (Meeting) o;
@@ -47,11 +46,9 @@ public class Meeting {
         return date == m.date && subject.equals(m.subject);
     }
 
-
     @Override
     public String toString() {
-        if (endTime.equals("<now>")) {
-            String s =
+        String s =
                     "{Meeting subject= '" + subject +
                     "'; date= " + date +
                     "; starttime= " + time +
@@ -62,22 +59,12 @@ public class Meeting {
                     "; mees=" + mees +
                     "; mohamed= " + mohamed +
                     "; thijs= " + thijs +
-                    "; note= '" + note.replace("\n","") + "'}";
-            return s;
+                    "; note= '";
+
+        if (endTime.equals("<now>")) {
+            return s + note.replace("\n","") + "'}";
         } else {
-            String s =
-                    "[Meeting subject= '" + subject +
-                    "', date= " + date +
-                    ", starttime= " + time +
-                    ", endtime= " + endTime +
-                    ", ryan= " + ryan +
-                    ", bayan= " + bayan +
-                    ", oussama= " + oussama +
-                    ", mees=" + mees +
-                    ", mohamed= " + mohamed +
-                    ", thijs= " + thijs +
-                    ", note= '" + note + "']";
-            return s;
+            return s + note + "'}";
         }
 
     }
