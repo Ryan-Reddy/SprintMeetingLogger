@@ -7,14 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
-import javax.management.Notification;
 import java.io.IOException;
-
-// TODO this is a new issue !
-//  labels: question
-
-
-
 
 
 public class Main extends Application {

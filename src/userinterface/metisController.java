@@ -16,7 +16,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -212,7 +211,7 @@ public class metisController {
 
     }
 
-    public void opslaanButtonPressed(ActionEvent actionEvent) throws IOException, InterruptedException {
+    public void opslaanButtonPressed(ActionEvent actionEvent) {
         bgtabPane.setStyle("-fx-background-color: #5dc7dc; -fx-border-width: 5px;");
 
         try {
@@ -328,64 +327,40 @@ public class metisController {
     }
 
     public void labelPercentageFiller() {
-        List<String> columnTot = new ArrayList<>();
         int totalCount = 0;
-        List<String> columnDataRyan = new ArrayList<>();
         int RyanCount = 0;
-        List<String> columnDataBayan = new ArrayList<>();
         int BayanCount = 0;
-        List<String> columnDataOussama = new ArrayList<>();
         int OussamaCount = 0;
-        List<String> columnDataMees = new ArrayList<>();
         int MeesCount = 0;
-        List<String> columnDataMo = new ArrayList<>();
         int MoCount = 0;
-        List<String> columnDataThijs = new ArrayList<>();
         int ThijsCount = 0;
         for (MeetingDataModel item : tableView.getItems()) {
-            columnTot.add(c2.getCellObservableValue(item).getValue());
-            columnDataRyan.add(c5.getCellObservableValue(item).getValue());
-            columnDataBayan.add(c6.getCellObservableValue(item).getValue());
-            columnDataOussama.add(c7.getCellObservableValue(item).getValue());
-            columnDataMees.add(c8.getCellObservableValue(item).getValue());
-            columnDataMo.add(c9.getCellObservableValue(item).getValue());
-            columnDataThijs.add(c10.getCellObservableValue(item).getValue());
-        }
 
-        for (String b : columnTot) {
             totalCount++;
-        }
-        for (String b : columnDataRyan) {
-            System.out.println(b);
-            if (b.equals("true")) {
+            if (c5.getCellObservableValue(item).getValue().equals("true")) {
                 RyanCount++;
             }
-        }
-        for (String b : columnDataBayan) {
-            if (b.equals("true")) {
+
+            if (c6.getCellObservableValue(item).getValue().equals("true")) {
                 BayanCount++;
             }
-        }
-        for (String b : columnDataOussama) {
-            if (b.equals("true")) {
+            if (c7.getCellObservableValue(item).getValue().equals("true")) {
                 OussamaCount++;
             }
-        }
-        for (String b : columnDataMees) {
-            if (b.equals("true")) {
+
+            if (c8.getCellObservableValue(item).getValue().equals("true")) {
                 MeesCount++;
             }
-        }
-        for (String b : columnDataMo) {
-            if (b.equals("true")) {
+
+            if (c9.getCellObservableValue(item).getValue().equals("true")) {
                 MoCount++;
             }
-        }
-        for (String b : columnDataThijs) {
-            if (b.equals("true")) {
+
+            if (c10.getCellObservableValue(item).getValue().equals("true")) {
                 ThijsCount++;
             }
         }
+
         varLabelTotMeetings.setText(String.valueOf(totalCount));
         varLabelRyan.setText(round((RyanCount/(double)totalCount)*100)+"%");
         varLabelBayan.setText(round((BayanCount/(double)totalCount)*100)+"%");
