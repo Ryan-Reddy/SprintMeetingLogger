@@ -145,7 +145,6 @@
                      <center>
                         <VBox spacing="15.0">
                            <children>
-                              <TextArea fx:id="textArea1" prefHeight="0.0" prefWidth="1314.0" style="-fx-background-color: gray; -fx-background-insets: 10; -fx-border-color: black;" />
                               <TableView fx:id="tableView" prefHeight="574.0" prefWidth="1344.0">
                                 <columns>
                                     <TableColumn fx:id="c1" prefWidth="88.0" text="MeetingNaam" />

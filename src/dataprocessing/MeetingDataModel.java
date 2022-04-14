@@ -3,23 +3,24 @@ package dataprocessing;
 import javafx.beans.property.SimpleStringProperty;
 
 public class MeetingDataModel {
-    private final SimpleStringProperty meetingNaam;
-    private final SimpleStringProperty datum;
-    private final SimpleStringProperty startTijd;
-    private final SimpleStringProperty eindTijd;
-    private final SimpleStringProperty ryan;
-    private final SimpleStringProperty bayan;
-    private final SimpleStringProperty oussama;
-    private final SimpleStringProperty mees;
-    private final SimpleStringProperty mohamed;
-    private final SimpleStringProperty thijs;
-    private final SimpleStringProperty note;
+    private final SimpleStringProperty MeetingNaam;
+    private final SimpleStringProperty Datum;
+    private final SimpleStringProperty Starttijd;
+    private final SimpleStringProperty Eindtijd;
+    private final SimpleStringProperty Ryan;
+    private final SimpleStringProperty Bayan;
+    private final SimpleStringProperty Oussama;
+    private final SimpleStringProperty Mees;
+    private final SimpleStringProperty Mohamed;
+    private final SimpleStringProperty Thijs;
+    private final SimpleStringProperty Note;
+
 
 
     public MeetingDataModel(String meetingNaam,
                             String datum,
-                            String startTijd,
-                            String eindTijd,
+                            String starttijd,
+                            String eindtijd,
                             String ryan,
                             String bayan,
                             String oussama,
@@ -27,146 +28,148 @@ public class MeetingDataModel {
                             String mohamed,
                             String thijs,
                             String note) {
-        this.meetingNaam = new SimpleStringProperty(meetingNaam);
-        this.datum = new SimpleStringProperty(datum);
-        this.startTijd = new SimpleStringProperty(startTijd);
-        this.eindTijd = new SimpleStringProperty(eindTijd);
-        this.ryan = new SimpleStringProperty(ryan);
-        this.bayan = new SimpleStringProperty(bayan);
-        this.oussama = new SimpleStringProperty(oussama);
-        this.mees = new SimpleStringProperty(mees);
-        this.mohamed = new SimpleStringProperty(mohamed);
-        this.thijs = new SimpleStringProperty(thijs);
-        this.note = new SimpleStringProperty(note);
+        MeetingNaam = new SimpleStringProperty(meetingNaam);
+        Datum = new SimpleStringProperty(datum);
+        Starttijd = new SimpleStringProperty(starttijd);
+        Eindtijd = new SimpleStringProperty(eindtijd);
+        Ryan = new SimpleStringProperty(ryan);
+        Bayan = new SimpleStringProperty(bayan);
+        Oussama = new SimpleStringProperty(oussama);
+        Mees = new SimpleStringProperty(mees);
+        Mohamed = new SimpleStringProperty(mohamed);
+        Thijs = new SimpleStringProperty(thijs);
+        Note = new SimpleStringProperty(note);
     }
 
     public String getMeetingNaam() {
-        return meetingNaam.get().substring(meetingNaam.get().indexOf("= ")+2);
+        return MeetingNaam.get().substring(MeetingNaam.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty meetingNaamProperty() {
-        return meetingNaam;
+        return MeetingNaam;
     }
 
     public void setMeetingNaam(String meetingNaam) {
-        this.meetingNaam.set(meetingNaam);
+        this.MeetingNaam.set(meetingNaam);
     }
 
     public String getDatum() {
-        return datum.get().substring(datum.get().indexOf("= ")+2);
+        return Datum.get().substring(Datum.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty datumProperty() {
-        return datum;
+        return Datum;
     }
 
     public void setDatum(String datum) {
-        this.datum.set(datum);
+        this.Datum.set(datum);
     }
 
-    public String getStartTijd() {
-        return startTijd.get().substring(startTijd.get().indexOf("= ")+2);
+    public String getStarttijd() {
+        return Starttijd.get().substring(Starttijd.get().indexOf("= ")+2);
     }
 
-    public SimpleStringProperty startTijdProperty() {
-        return startTijd;
+    public SimpleStringProperty starttijdProperty() {
+        return Starttijd;
     }
 
-    public void setStartTijd(String startTijd) {
-        this.startTijd.set(startTijd);
+    public void setStarttijd(String starttijd) {
+        this.Starttijd.set(starttijd);
     }
 
-    public String getEindTijd() {
-        return eindTijd.get().substring(eindTijd.get().indexOf("= ")+2);
+    public String getEindtijd() {
+        return Eindtijd.get().substring(Eindtijd.get().indexOf("= ")+2);
     }
 
-    public SimpleStringProperty eindTijdProperty() {
-        return eindTijd;
+    public SimpleStringProperty eindtijdProperty() {
+        return Eindtijd;
     }
 
-    public void setEindTijd(String eindTijd) {
-        this.eindTijd.set(eindTijd);
+    public void setEindtijd(String eindtijd) {
+        this.Eindtijd.set(eindtijd);
     }
 
     public String getRyan() {
-        return ryan.get().substring(ryan.get().indexOf("= ")+2);
+        return Ryan.get().substring(Ryan.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty ryanProperty() {
-        return ryan;
+        return Ryan;
     }
 
     public void setRyan(String ryan) {
-        this.ryan.set(ryan);
+        this.Ryan.set(ryan);
     }
 
     public String getBayan() {
-        return bayan.get().substring(bayan.get().indexOf("= ")+2);
+        return Bayan.get().substring(Bayan.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty bayanProperty() {
-        return bayan;
+        return Bayan;
     }
 
     public void setBayan(String bayan) {
-        this.bayan.set(bayan);
+        this.Bayan.set(bayan);
     }
 
     public String getOussama() {
-        return oussama.get().substring(oussama.get().indexOf("= ")+2);
+        return Oussama.get().substring(Oussama.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty oussamaProperty() {
-        return oussama;
+        return Oussama;
     }
 
     public void setOussama(String oussama) {
-        this.oussama.set(oussama);
+        this.Oussama.set(oussama);
     }
 
     public String getMees() {
-        return mees.get().substring(mees.get().indexOf("=")+1);
+        return Mees.get().substring(Mees.get().indexOf("=")+1);
     }
 
     public SimpleStringProperty meesProperty() {
-        return mees;
+        return Mees;
     }
 
     public void setMees(String mees) {
-        this.mees.set(mees);
+        this.Mees.set(mees);
     }
 
     public String getMohamed() {
-        return mohamed.get().substring(mohamed.get().indexOf("= ")+2);
+        return Mohamed.get().substring(Mohamed.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty mohamedProperty() {
-        return mohamed;
+        return Mohamed;
     }
 
     public void setMohamed(String mohamed) {
-        this.mohamed.set(mohamed);
+        this.Mohamed.set(mohamed);
     }
 
     public String getThijs() {
-        return thijs.get().substring(thijs.get().indexOf("= ")+2);
+        return Thijs.get().substring(Thijs.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty thijsProperty() {
-        return thijs;
+        return Thijs;
     }
 
     public void setThijs(String thijs) {
-        this.thijs.set(thijs);
+        this.Thijs.set(thijs);
     }
 
     public String getNote() {
-        return note.get().substring(note.get().indexOf("= ")+2);
+        return Note.get().substring(Note.get().indexOf("= ")+2);
     }
 
-    public SimpleStringProperty noteProperty() { return note; }
+    public SimpleStringProperty noteProperty() {
+        return Note;
+    }
 
     public void setNote(String note) {
-        this.note.set(note);
+        this.Note.set(note);
     }
 }

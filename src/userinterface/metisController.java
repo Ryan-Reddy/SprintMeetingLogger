@@ -294,7 +294,7 @@ public class metisController {
         Matcher m = p.matcher(listString);
         while (m.find()) {
             String meetingUitLogString = m.group(1);                    //is your string. do what you want
-            textArea1.appendText(meetingUitLogString + "\n");
+//            textArea1.appendText(meetingUitLogString + "\n");
             String[] meetParts = meetingUitLogString.split(";");
 
             meetingNaam = meetParts[0];
