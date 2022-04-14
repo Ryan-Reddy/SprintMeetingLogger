@@ -42,7 +42,7 @@ public class MeetingDataModel {
     }
 
     public String getMeetingNaam() {
-        return MeetingNaam.get();
+        return MeetingNaam.get().substring(MeetingNaam.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty meetingNaamProperty() {
@@ -54,7 +54,7 @@ public class MeetingDataModel {
     }
 
     public String getDatum() {
-        return Datum.get();
+        return Datum.get().substring(Datum.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty datumProperty() {
@@ -66,7 +66,7 @@ public class MeetingDataModel {
     }
 
     public String getStarttijd() {
-        return Starttijd.get();
+        return Starttijd.get().substring(Starttijd.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty starttijdProperty() {
@@ -78,7 +78,7 @@ public class MeetingDataModel {
     }
 
     public String getEindtijd() {
-        return Eindtijd.get();
+        return Eindtijd.get().substring(Eindtijd.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty eindtijdProperty() {
@@ -90,7 +90,7 @@ public class MeetingDataModel {
     }
 
     public String getRyan() {
-        return Ryan.get();
+        return Ryan.get().substring(Ryan.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty ryanProperty() {
@@ -102,7 +102,7 @@ public class MeetingDataModel {
     }
 
     public String getBayan() {
-        return Bayan.get();
+        return Bayan.get().substring(Bayan.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty bayanProperty() {
@@ -114,7 +114,7 @@ public class MeetingDataModel {
     }
 
     public String getOussama() {
-        return Oussama.get();
+        return Oussama.get().substring(Oussama.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty oussamaProperty() {
@@ -126,7 +126,7 @@ public class MeetingDataModel {
     }
 
     public String getMees() {
-        return Mees.get();
+        return Mees.get().substring(Mees.get().indexOf("=")+1);
     }
 
     public SimpleStringProperty meesProperty() {
@@ -138,7 +138,7 @@ public class MeetingDataModel {
     }
 
     public String getMohamed() {
-        return Mohamed.get();
+        return Mohamed.get().substring(Mohamed.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty mohamedProperty() {
@@ -150,7 +150,7 @@ public class MeetingDataModel {
     }
 
     public String getThijs() {
-        return Thijs.get();
+        return Thijs.get().substring(Thijs.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty thijsProperty() {
@@ -162,7 +162,7 @@ public class MeetingDataModel {
     }
 
     public String getNote() {
-        return Note.get();
+        return Note.get().substring(Note.get().indexOf("= ")+2);
     }
 
     public SimpleStringProperty noteProperty() {

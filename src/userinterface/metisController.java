@@ -182,7 +182,6 @@ public class metisController {
         c9.setCellValueFactory(new PropertyValueFactory<>("Mohamed"));
         c10.setCellValueFactory(new PropertyValueFactory<>("Thijs"));
         c11.setCellValueFactory(new PropertyValueFactory<>("Note"));
-        c12.setCellValueFactory(new PropertyValueFactory<>(""));
 
         try {
             dbREFRESH();

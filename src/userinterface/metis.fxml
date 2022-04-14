@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1344.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1344.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userinterface.metisController">
    <children>
-      <TabPane fx:id="bgtabPane" prefHeight="614.0" prefWidth="1344.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <TabPane fx:id="bgtabPane" prefHeight="761.0" prefWidth="1344.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-147.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
           <Tab fx:id="bgTab" text="MeetingLogger">
             <content>
@@ -122,15 +137,26 @@
           </Tab>
           <Tab text="OverviewMeetings">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <VBox prefHeight="585.0" prefWidth="1344.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <BorderPane>
+                     <center>
+                        <VBox>
                            <children>
-                              <TextArea fx:id="textArea1" prefHeight="188.0" prefWidth="1314.0" style="-fx-background-color: gray; -fx-background-insets: 10; -fx-border-color: black;">
-                                 <VBox.margin>
-                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-                                 </VBox.margin>
-                              </TextArea>
+                              <TextArea fx:id="textArea1" prefHeight="0.0" prefWidth="1314.0" style="-fx-background-color: gray; -fx-background-insets: 10; -fx-border-color: black;" />
+                              <TableView fx:id="tableView" prefHeight="574.0" prefWidth="1344.0">
+                                <columns>
+                                    <TableColumn fx:id="c1" prefWidth="88.0" text="MeetingNaam" />
+                                    <TableColumn fx:id="c2" prefWidth="60.0" text="datum" />
+                                    <TableColumn fx:id="c3" prefWidth="60.0" text="starttijd" />
+                                    <TableColumn fx:id="c4" prefWidth="60.0" text="eindtijd" />
+                                    <TableColumn fx:id="c5" prefWidth="50.0" text="ryan" />
+                                    <TableColumn fx:id="c6" prefWidth="60.0" text="bayan" />
+                                    <TableColumn fx:id="c7" prefWidth="60.0" text="oussama" />
+                                    <TableColumn fx:id="c8" prefWidth="50.0" text="mees" />
+                                  <TableColumn fx:id="c9" prefWidth="70.0" text="mohamed" />
+                                    <TableColumn fx:id="c10" prefWidth="75.0" text="thijs" />
+                                    <TableColumn fx:id="c11" prefWidth="610.0" text="note" />
+                                </columns>
+                              </TableView>
                               <ButtonBar prefHeight="45.0" prefWidth="667.0">
                                  <buttons>
                                     <Button fx:id="dbButton" mnemonicParsing="false" onAction="#dbButtonPressed" text="Update DB" />
@@ -139,26 +165,13 @@
                                     <Insets bottom="15.0" left="15.0" right="15.0" />
                                  </padding>
                               </ButtonBar>
-                              <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
-                                <columns>
-                                    <TableColumn fx:id="c1" prefWidth="75.0" text="MeetingNaam" />
-                                    <TableColumn fx:id="c2" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c3" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c4" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c5" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c6" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c7" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c8" prefWidth="75.0" text="C1" />
-                                  <TableColumn fx:id="c9" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c10" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c11" prefWidth="75.0" text="C1" />
-                                    <TableColumn fx:id="c12" prefWidth="75.0" text="C1" />
-                                </columns>
-                              </TableView>
                            </children>
                         </VBox>
-                     </children>
-                  </AnchorPane>
+                     </center>
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                  </BorderPane>
             </content>
           </Tab>
         </tabs>
